@@ -9,7 +9,9 @@ LFS version 2.0.1+
 /[Bb]uilds/
 /[Ll]ogs/
 /[Mm]emoryCaptures/
-/[Aa]ssets/
+
+#################//this is for WWISE!!!!
+/[Aa]ssets/Wwise/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
