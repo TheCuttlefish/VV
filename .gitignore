@@ -1,7 +1,7 @@
-# This .gitignore file should be placed at the root of your Unity project directory
-#
-# Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
-#
+Git version 2.3+
+LFS version 2.0.1+
+
+
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
@@ -132,3 +132,6 @@ WwiseUnityIntegration_*_Src.zip
 *.bnk filter=lfs diff=lfs merge=lfs -text
 AkSoundEngine filter=lfs diff=lfs merge=lfs -text
 
+//large files
+/[Ll]ibrary/PackageCache/com.unity.burst@1.6.6/
+/Library/PackageCache/
