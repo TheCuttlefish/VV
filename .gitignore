@@ -136,5 +136,5 @@ WwiseUnityIntegration_*_Src.zip
 AkSoundEngine filter=lfs diff=lfs merge=lfs -text
 
 //large files
-/[Ll]ibrary/PackageCache/com.unity.burst@1.6.6/
+#/[Ll]ibrary/PackageCache/com.unity.burst@1.6.6/
 /Library/PackageCache/
