@@ -2517,8 +2517,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f2df9b41fbb49949bdc2c3d344670db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDefaultListener: 1
-  listenerId: 0
 --- !u!114 &519420035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2531,16 +2529,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 850fc2ee673b7b849a8a86e12f20f68b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 1
-  isStaticObject: 0
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
 --- !u!114 &519420036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2630,6 +2618,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d835d7fbdc0817e42bae8f25c1eced26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDefaultListener: 1
+  listenerId: 0
 --- !u!114 &519420039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2642,6 +2632,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d2dc552ca047a64084f29ef2cca3e48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 0
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &534311811
 GameObject:
   m_ObjectHideFlags: 0
@@ -3176,6 +3176,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d9dcd31ad838a34da2938f302d69799, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InitializationSettings: {fileID: 11400000, guid: 4cb619d68af43be438bbc33bd772fe7e,
+    type: 2}
+  basePath: 
+  language: 
+  defaultPoolSize: 0
+  lowerPoolSize: 0
+  streamingPoolSize: 0
+  memoryCutoffThreshold: 0
+  monitorPoolSize: 0
+  monitorQueuePoolSize: 0
+  callbackManagerBufferSize: 0
+  spatialAudioPoolSize: 0
+  maxSoundPropagationDepth: 0
+  engineLogging: 0
 --- !u!4 &597221271
 Transform:
   m_ObjectHideFlags: 0
@@ -5537,7 +5551,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1215398226}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22083f8d3bd90664bb638e9099c47aa6, type: 3}
+  m_Script: {fileID: 11500000, guid: 33eee73a8c4cb1d44b3ce04115160fe4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   triggerList: f7e1664c
@@ -5545,7 +5559,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 87f7f30d022442e4b8170b440ec3a4d2,
+    WwiseObjectReference: {fileID: 11400000, guid: f2b038e629535464d8d6a66bcb028a23,
       type: 2}
   decodeBank: 0
   loadAsynchronous: 0
@@ -6277,20 +6291,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b7ed725127102242982370ee59814fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitializationSettings: {fileID: 11400000, guid: 6938fb53920e7d148a0d033012efcea8,
-    type: 2}
-  basePath: 
-  language: 
-  defaultPoolSize: 0
-  lowerPoolSize: 0
-  streamingPoolSize: 0
-  memoryCutoffThreshold: 0
-  monitorPoolSize: 0
-  monitorQueuePoolSize: 0
-  callbackManagerBufferSize: 0
-  spatialAudioPoolSize: 0
-  maxSoundPropagationDepth: 0
-  engineLogging: 0
 --- !u!4 &1582484048
 Transform:
   m_ObjectHideFlags: 0
