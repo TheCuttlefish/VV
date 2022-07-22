@@ -12,5 +12,11 @@ public class WwiseTest : MonoBehaviour
             AkSoundEngine.PostEvent("soundTest", gameObject);//  Wwise test!
             print("sound should be played!!");
         }
+
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            AkSoundEngine.PostEvent("soundTest2", gameObject);//  Wwise test!
+            print("sound should be played!!");
+        }
     }
 }

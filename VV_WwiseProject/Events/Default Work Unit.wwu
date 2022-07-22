@@ -14,6 +14,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="soundTest2" ID="{0E30F930-1F31-40C4-9AA5-22390C86C40A}">
+					<ChildrenList>
+						<Action Name="" ID="{9E34A29B-CBD6-4B96-9486-9185035CD868}" ShortID="628248484">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sa_seaside_amb" ID="{A9DB9C2C-891B-49E9-AB29-E2956453BAD1}" WorkUnitID="{FBD7B8A0-D0C8-4E14-AABC-3334A060124E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
