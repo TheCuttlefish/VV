@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>D:\CuttleFish\VV\VV_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\CuttleFish\VV\VV_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\CuttleFish\VV\VV_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\CuttleFish\VV\VV_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="2754342975">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1831431028" Language="SFX" Hash="853924578">
+			<ObjectPath>\SoundBanks\Default Work Unit\testSoundBank</ObjectPath>
+			<ShortName>testSoundBank</ShortName>
+			<Path>testSoundBank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1252261978" Name="soundTest" ObjectPath="\Events\Default Work Unit\soundTest" DurationType="OneShot" DurationMin="15.533334" DurationMax="15.533334">
+					<IncludedMemoryFiles>
+						<File Id="1020769064" Language="SFX">
+							<ShortName>VV.wav</ShortName>
+							<Path>SFX\VV_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
