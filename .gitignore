@@ -11,7 +11,7 @@ LFS version 2.0.1+
 /[Mm]emoryCaptures/
 
 #################//this is for WWISE!!!!
-/[Aa]ssets/Wwise/
+/[Aa]ssets/Wwise/API/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
