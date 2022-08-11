@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73361d91b3558b445b3d8c689c90b399, type: 3}
+  m_Name: 9D5AD044-56AC-4F8A-8C2C-FE6CDE14EB50
+  m_EditorClassIdentifier: 
+  objectName: testSoundBank2
+  id: 1278486446
+  guid: 9D5AD044-56AC-4F8A-8C2C-FE6CDE14EB50

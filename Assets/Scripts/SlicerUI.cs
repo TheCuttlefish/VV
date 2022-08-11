@@ -39,13 +39,13 @@ public class SlicerUI : MonoBehaviour
         {
             mouseDown = true;
             sliceStartPos = Camera.main.ScreenToWorldPoint(Input.mousePosition) - offset;
-            slicerArt.GetComponent<VineSlicer>().StartSlicing();
+            slicerArt.GetComponent<SlicerObject>().StartSlicing();
             spriteEffect.SetActive(false);
         }
 
         if (Input.GetMouseButtonUp(1))
         {
-            slicerArt.GetComponent<VineSlicer>().ShowSlice();
+            slicerArt.GetComponent<SlicerObject>().ShowSlice();
             slicerArt.GetComponent<BoxCollider2D>().enabled = true;
             sliceActive = true;
             mouseDown = false;

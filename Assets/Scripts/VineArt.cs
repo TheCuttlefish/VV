@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class VineArtAppear : MonoBehaviour
+public class VineArt : MonoBehaviour
 {
     
     void Awake()
@@ -16,6 +16,6 @@ public class VineArtAppear : MonoBehaviour
     {
         timer += Time.deltaTime*5;
         transform.localScale = new Vector3(0.08f, timer, 1f);
-        if (timer > 1) GetComponent<VineArtAppear>().enabled = false;
+        if (timer > 1) GetComponent<VineArt>().enabled = false;
     }
 }

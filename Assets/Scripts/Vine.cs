@@ -13,7 +13,7 @@ public class Vine : MonoBehaviour
     public void Awake()
     {
         currentSize = 0;
-        transform.Find("art").transform.Find("Vineartsample2").GetComponent<SpriteRenderer>().transform.localScale = new Vector3(1.16f, 0.093f, 0.093f);
+        transform.Find("artContainer").transform.Find("vineArt").GetComponent<SpriteRenderer>().transform.localScale = new Vector3(1.16f, 0.093f, 0.093f);
     }
 
 
@@ -23,19 +23,16 @@ public class Vine : MonoBehaviour
         if (_newVineSize == currentSize )//only increase if new vine is the same size as parent
         {
 
-            if (currentSize == 2) return;// don't send message after 2 increases
+            if (currentSize == 7) return;// should be size of max size (like 5 etc)
             currentSize++;
-            if (currentSize == 1)
-            {
-               // transform.localScale = new Vector3(1.8f, 1, 1);
-                transform.Find("art").transform.Find("Vineartsample2").GetComponent<SpriteRenderer>().transform.localScale = new Vector3(1.8f, 0.093f, 0.093f);
-
-            }
-            else if (currentSize == 2)
-            {
-                //transform.localScale = new Vector3(3f, 1, 1);
-                transform.Find("art").transform.Find("Vineartsample2").GetComponent<SpriteRenderer>().transform.localScale = new Vector3(3.0f, 0.093f, 0.093f);
-            }
+            if (currentSize == 1) transform.Find("artContainer").transform.Find("vineArt").GetComponent<SpriteRenderer>().transform.localScale = new Vector3(1.8f, 0.093f, 0.093f);
+            if (currentSize == 2) transform.Find("artContainer").transform.Find("vineArt").GetComponent<SpriteRenderer>().transform.localScale = new Vector3(2.0f, 0.093f, 0.093f);
+            if (currentSize == 3) transform.Find("artContainer").transform.Find("vineArt").GetComponent<SpriteRenderer>().transform.localScale = new Vector3(2.2f, 0.093f, 0.093f);
+            if (currentSize == 4) transform.Find("artContainer").transform.Find("vineArt").GetComponent<SpriteRenderer>().transform.localScale = new Vector3(2.4f, 0.093f, 0.093f);
+            if (currentSize == 5) transform.Find("artContainer").transform.Find("vineArt").GetComponent<SpriteRenderer>().transform.localScale = new Vector3(2.6f, 0.093f, 0.093f);
+            if (currentSize == 6) transform.Find("artContainer").transform.Find("vineArt").GetComponent<SpriteRenderer>().transform.localScale = new Vector3(2.8f, 0.093f, 0.093f);
+            else if (currentSize == 7) transform.Find("artContainer").transform.Find("vineArt").GetComponent<SpriteRenderer>().transform.localScale = new Vector3(3.0f, 0.093f, 0.093f);
+            
             if (parentVine != null) parentVine.GetComponent<Vine>().IncreaseSize(currentSize);
         }
     }
@@ -49,7 +46,7 @@ public class Vine : MonoBehaviour
     private void Start()
     {
        
-        transform.GetChild(1).GetComponent<VineArtAppear>().enabled = true;
+        transform.GetChild(1).GetComponent<VineArt>().enabled = true;
     }
 
     public void Grow(bool many = false)

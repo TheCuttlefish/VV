@@ -2,12 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class VineSlicer : MonoBehaviour
+public class SlicerObject : MonoBehaviour
 {
     // Start is called before the first frame update
     public Gradient gradient;
     float sliceTimer;
     bool showSlice = false;
+
+    private void Awake()
+    {
+       // transform.localScale = new Vector3(1, 0, 1);
+    }
     public void StartSlicing()
     {
         showSlice = false;
