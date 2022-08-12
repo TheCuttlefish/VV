@@ -17,7 +17,7 @@ public class Cursor : MonoBehaviour
     Vector3 offset  = new Vector3(0, 0, -10);
     GameObject selectedTip;
     float dist;
-    public GameObject lineToVine;
+    public GameObject vineAim;
     Rigidbody2D rb2D;
     public LayerMask tip;
     public GameObject spriteCursor;
@@ -26,6 +26,7 @@ public class Cursor : MonoBehaviour
     public GameObject bubbleUI;
     GameObject lastActiveVine;
     bool creatineVine = false;
+    bool spawnDistanceReached = false;
     private void Awake()
     {
         spriteCursor.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) - offset;
@@ -51,37 +52,56 @@ public class Cursor : MonoBehaviour
 
     void BubbleUI()
     {
-        if (selectedTip == null) //disappear
+        if (!creatineVine)
         {
-          
-            bubbleUI.GetComponent<UISelectCircle>().Hide();
-            if (lastActiveVine != null) bubbleUI.transform.position = lastActiveVine.transform.position;
-            bubbleUI.GetComponent<SpriteRenderer>().color -= (bubbleUI.GetComponent<SpriteRenderer>().color - new Color(0, 1, 1, 0)) / 0.06f * Time.deltaTime;
 
-        }
-        else//appear
+            if (selectedTip == null) //disappear
+            {
+
+                bubbleUI.GetComponent<UISelectCircle>().Hide();
+                if (lastActiveVine != null) bubbleUI.transform.position = lastActiveVine.transform.position;
+                bubbleUI.GetComponent<SpriteRenderer>().color -= (bubbleUI.GetComponent<SpriteRenderer>().color - new Color(0, 1, 1, 0)) / 0.06f * Time.deltaTime;
+
+            }
+            else//appear
+            {
+
+                bubbleUI.GetComponent<UISelectCircle>().Show();
+                bubbleUI.transform.position = selectedTip.transform.position;
+                bubbleUI.GetComponent<SpriteRenderer>().color -= (bubbleUI.GetComponent<SpriteRenderer>().color - new Color(0, 1, 1, 1)) / 0.8f * Time.deltaTime;
+            }
+        }else //----not sure if this section is logically correct!!! (seems to work for now)
         {
-     
-            bubbleUI.GetComponent<UISelectCircle>().Show();
-            bubbleUI.transform.position = selectedTip.transform.position;
-            bubbleUI.GetComponent<SpriteRenderer>().color -= (bubbleUI.GetComponent<SpriteRenderer>().color - new Color(0, 1, 1, 1)) / 0.8f * Time.deltaTime;
+            if (selectedTip != null)
+            {
+                bubbleUI.GetComponent<UISelectCircle>().ShowLimit();
+                bubbleUI.transform.position = selectedTip.transform.position;
+            }
+            else
+            {
+                bubbleUI.GetComponent<UISelectCircle>().Hide();
+               
+            }
+                lastActiveVine = null;
+            
         }
     }
     void MagicCursor()
     {
         
-            if (selectedTip == null)
+            if (selectedTip == null) // on disappear
             {
                 spriteCursor.transform.position -= (spriteCursor.transform.position - transform.position) / 0.2f * Time.deltaTime;//speed away
                 spriteCursor.transform.localScale -= (spriteCursor.transform.localScale - Vector3.zero) / 0.05f * Time.deltaTime;//scale away
-           
+
             }
-            else
+            else // on appear!
             {
                 spriteCursor.transform.position -= (spriteCursor.transform.position - selectedTip.transform.position) / 0.2f * Time.deltaTime;//
                 spriteCursor.transform.localScale -= (spriteCursor.transform.localScale - originalSrpiteCursorScale) / 0.05f * Time.deltaTime;
-            
-        }
+
+            }
+        
         
     }
     void ClickAndSelect()
@@ -91,7 +111,7 @@ public class Cursor : MonoBehaviour
       
         //ray cast
         hit = Physics2D.Raycast(transform.position, Vector3.zero, Mathf.Infinity, tip);
-        lineToVine.transform.localScale = new Vector3(0.075f, 0, 1);
+        vineAim.transform.localScale = new Vector3(0.075f, 0, 1);
 
 
         if (creatineVine == false)
@@ -116,8 +136,8 @@ public class Cursor : MonoBehaviour
 
 
 
-                //if (Input.GetMouseButtonDown(0)) selectedTip.transform.parent.GetComponent<Vine>().Grow(); -- one click grow
-                //DEBUG!!
+                
+                // DEBUG ONLY ## [ this is for quickly spawning a lot of vines with keys ]
                 if (Input.GetKeyDown(KeyCode.Alpha1)) selectedTip.transform.parent.GetComponent<Vine>().Grow();
                 if (Input.GetKeyDown(KeyCode.Alpha2)) selectedTip.transform.parent.GetComponent<Vine>().Grow(true);
             }
@@ -131,25 +151,46 @@ public class Cursor : MonoBehaviour
             }
         }
 
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0)) // find angle for new vine
         {
             creatineVine = true;
             //find angle
             if (selectedTip == null) return;
             Debug.DrawLine(transform.position, selectedTip.transform.position);//draw line
             dist = Vector2.Distance(transform.position, selectedTip.transform.position);//find dist (not used)
-            lineToVine.transform.position = transform.position;
-            lineToVine.transform.up = transform.position - selectedTip.transform.position;
-            lineToVine.transform.localScale = new Vector3(0.075f, dist, 1);
-            GAME.VINE_LINE_Z = lineToVine.transform.localEulerAngles.z;
+            vineAim.transform.position = selectedTip.transform.position;
+            vineAim.transform.up = transform.position - selectedTip.transform.position;
+            vineAim.transform.localScale = new Vector3(0.075f, Mathf.Clamp(dist,0,1.1f), 1);
+            GAME.VINE_LINE_Z = vineAim.transform.localEulerAngles.z;
+
+
+            //show when you can spawn it
+            if (dist > 1) // reached
+            { vineAim.transform.GetChild(0).GetComponent<SpriteRenderer>().color = Color.green;
+                spawnDistanceReached = true;
+            }
+            else // not reached
+            { vineAim.transform.GetChild(0).GetComponent<SpriteRenderer>().color = new Color(0, 1, 1, 0.3f);
+                spawnDistanceReached = false;
+            }
+
+
+           
         }
 
-        if (Input.GetMouseButtonUp(0))
+        if (Input.GetMouseButtonUp(0) ) // spawn a new vine
         {
             creatineVine = false;
-            if (selectedTip == null) return;
-            selectedTip.transform.parent.GetComponent<Vine>().Grow();
-            
+            if (spawnDistanceReached)
+            {
+                spawnDistanceReached = false;
+                if (selectedTip == null) return;
+                selectedTip.transform.parent.GetComponent<Vine>().Grow();
+               
+            }
+            selectedTip = null;
+
+
         }
         
        

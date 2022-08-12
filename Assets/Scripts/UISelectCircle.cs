@@ -28,7 +28,10 @@ public class UISelectCircle : MonoBehaviour
     public void Hide()
     {
         newScale = 0;
-        //transform.localScale = new Vector3(1, 1, 1) * 0.2f ;
+    }
+    public void ShowLimit()
+    {
+        newScale = 2;
     }
 
 }
