@@ -14,8 +14,8 @@ public class HideOnTimer : MonoBehaviour
         timer += Time.deltaTime;
         if(timer > seconds)
         {
-            gameObject.SetActive(false);
             timer = 0;
+            gameObject.SetActive(false);
         }
     }
 }

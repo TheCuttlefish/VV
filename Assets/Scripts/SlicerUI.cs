@@ -17,7 +17,8 @@ public class SlicerUI : MonoBehaviour
     
     private void Start()
     {
-        slicerArt.GetComponent<BoxCollider2D>().enabled = false;
+        transform.localScale = new Vector3(0, 1, 1);//reset scale to 0
+       // slicerArt.GetComponent<BoxCollider2D>().enabled = false;
     }
     // Update is called once per frame
     void Update()
@@ -55,6 +56,7 @@ public class SlicerUI : MonoBehaviour
             sliceEffect.SetActive(true);
             spriteEffect.transform.position = transform.position;
             spriteEffect.SetActive(true);
+           
         }
 
         if (sliceActive)
@@ -66,7 +68,7 @@ public class SlicerUI : MonoBehaviour
                 slicerArt.GetComponent<BoxCollider2D>().enabled = false;
                 sliceActive = false;
                 sliceTimer = 0;
-               
+                transform.localScale = new Vector3(0, 1, 1);//reset scale to 0
             }
 
 

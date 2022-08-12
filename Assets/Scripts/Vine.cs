@@ -7,13 +7,19 @@ public class Vine : MonoBehaviour
 
 
     private GameObject parentVine;
+    private GameObject vineArt;
+    private Color originalVineColour;
+    private GameObject vineTipArt;
     int currentSize = 0;
 
 
     public void Awake()
     {
         currentSize = 0;
-        transform.Find("artContainer").transform.Find("vineArt").GetComponent<SpriteRenderer>().transform.localScale = new Vector3(1.16f, 0.093f, 0.093f);
+        vineArt = transform.Find("artContainer").transform.Find("vineArt").gameObject; // be careful with finding vine art by name....
+        vineTipArt = transform.Find("tip").transform.Find("tipArt").gameObject;
+        originalVineColour = vineArt.GetComponent<SpriteRenderer>().color;
+        vineArt.transform.localScale = new Vector3(1.16f, 0.093f, 0.093f);
     }
 
 
@@ -23,15 +29,21 @@ public class Vine : MonoBehaviour
         if (_newVineSize == currentSize )//only increase if new vine is the same size as parent
         {
 
-            if (currentSize == 7) return;// should be size of max size (like 5 etc)
+            if (currentSize == 8) return;// should be size of max size - so 7 or 8 (test it !!!  )
             currentSize++;
-            if (currentSize == 1) transform.Find("artContainer").transform.Find("vineArt").GetComponent<SpriteRenderer>().transform.localScale = new Vector3(1.8f, 0.093f, 0.093f);
-            if (currentSize == 2) transform.Find("artContainer").transform.Find("vineArt").GetComponent<SpriteRenderer>().transform.localScale = new Vector3(2.0f, 0.093f, 0.093f);
-            if (currentSize == 3) transform.Find("artContainer").transform.Find("vineArt").GetComponent<SpriteRenderer>().transform.localScale = new Vector3(2.2f, 0.093f, 0.093f);
-            if (currentSize == 4) transform.Find("artContainer").transform.Find("vineArt").GetComponent<SpriteRenderer>().transform.localScale = new Vector3(2.4f, 0.093f, 0.093f);
-            if (currentSize == 5) transform.Find("artContainer").transform.Find("vineArt").GetComponent<SpriteRenderer>().transform.localScale = new Vector3(2.6f, 0.093f, 0.093f);
-            if (currentSize == 6) transform.Find("artContainer").transform.Find("vineArt").GetComponent<SpriteRenderer>().transform.localScale = new Vector3(2.8f, 0.093f, 0.093f);
-            else if (currentSize == 7) transform.Find("artContainer").transform.Find("vineArt").GetComponent<SpriteRenderer>().transform.localScale = new Vector3(3.0f, 0.093f, 0.093f);
+            if (currentSize == 1) vineArt.transform.localScale = new Vector3(1.8f, 0.093f, 0.093f);
+            if (currentSize == 2) vineArt.transform.localScale = new Vector3(2.0f, 0.093f, 0.093f);
+            if (currentSize == 3) vineArt.transform.localScale = new Vector3(3.2f, 0.093f, 0.093f);
+            if (currentSize == 4) vineArt.transform.localScale = new Vector3(4.4f, 0.093f, 0.093f);
+            if (currentSize == 5) vineArt.transform.localScale = new Vector3(5.6f, 0.093f, 0.093f);
+            if (currentSize == 6) vineArt.transform.localScale = new Vector3(6.8f, 0.093f, 0.093f);
+            if (currentSize == 7)
+            {
+                vineArt.transform.localScale = new Vector3(7.0f, 0.093f, 0.093f);
+                vineArt.GetComponent<SpriteRenderer>().color = Color.black;
+                vineTipArt.GetComponent<SpriteRenderer>().color = Color.black;//not entirely finished code !!!
+                vineTipArt.transform.parent.gameObject.SetActive(false);//not entirely finished code !!! --- needs playtesting
+            }
             
             if (parentVine != null) parentVine.GetComponent<Vine>().IncreaseSize(currentSize);
         }
@@ -88,10 +100,23 @@ public class Vine : MonoBehaviour
     {
         if (!sliced)
         {
+            ReadyToSlice(false);
             GetComponent<FixedJoint2D>().enabled = false;
             GetComponent<BoxCollider2D>().isTrigger = true;
             Destroy(gameObject, Random.Range(0.5f,1f));
             sliced = true;
         }
+    }
+
+    public void ReadyToSlice(bool isSelected)
+    {
+        if (isSelected)
+        {
+            vineArt.GetComponent<SpriteRenderer>().color = new Color(1, 0, 0, 0.3f);
+        }else
+        {
+            vineArt.GetComponent<SpriteRenderer>().color = originalVineColour;
+        }
+
     }
 }
