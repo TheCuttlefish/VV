@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1252261978	soundTest			\Default Work Unit\soundTest	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	787699486	soundTest	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Windows\SFX\Party favor or noise maker blow whistle roll up_BLASTWAVEFX_02416_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\soundTest		480760
+

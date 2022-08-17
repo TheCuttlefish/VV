@@ -215,8 +215,7 @@ public class AkRoom : AkTriggerHandler
 					previousScale == transform.localScale)
 					return geometryID;
 #endif
-				AkSurfaceReflector.SetGeometryFromMesh(meshCollider.sharedMesh, geometryID, false, false, false);
-				AkSurfaceReflector.SetGeometryInstance(geometryID, geometryID, INVALID_ROOM_ID, transform);
+				AkSurfaceReflector.SetGeometryFromMesh(meshCollider.sharedMesh, transform, geometryID, INVALID_ROOM_ID, false, false, false);
 #if UNITY_EDITOR
 				previousMeshCollider = meshCollider;
 				previousPosition = transform.position;
@@ -250,8 +249,7 @@ public class AkRoom : AkTriggerHandler
 				roomScale.z = transform.localScale.z * boxCollider.size.z;
 				tempGameObject.transform.localScale = roomScale;
 
-				AkSurfaceReflector.SetGeometryFromMesh(mesh, geometryID, false, false, false);
-				AkSurfaceReflector.SetGeometryInstance(geometryID, geometryID, INVALID_ROOM_ID, tempGameObject.transform);
+				AkSurfaceReflector.SetGeometryFromMesh(mesh, tempGameObject.transform, geometryID, INVALID_ROOM_ID, false, false, false);
 #if UNITY_EDITOR
 				previousBoxCollider = boxCollider;
 				previousPosition = tempGameObject.transform.position;
@@ -280,8 +278,7 @@ public class AkRoom : AkTriggerHandler
 				tempGameObject.transform.rotation = transform.rotation;
 				tempGameObject.transform.localScale = GetCapsuleScale(transform.localScale, capsuleCollider.radius, capsuleCollider.height, capsuleCollider.direction);
 
-				AkSurfaceReflector.SetGeometryFromMesh(mesh, geometryID, false, false, false);
-				AkSurfaceReflector.SetGeometryInstance(geometryID, geometryID, INVALID_ROOM_ID, tempGameObject.transform);
+				AkSurfaceReflector.SetGeometryFromMesh(mesh, tempGameObject.transform, geometryID, INVALID_ROOM_ID, false, false, false);
 #if UNITY_EDITOR
 				previousCapsuleCollider = capsuleCollider;
 				previousPosition = tempGameObject.transform.position;
@@ -306,8 +303,7 @@ public class AkRoom : AkTriggerHandler
 				tempGameObject.transform.position = roomCollider.bounds.center;
 				tempGameObject.transform.localScale = roomCollider.bounds.size;
 
-				AkSurfaceReflector.SetGeometryFromMesh(mesh, geometryID, false, false, false);
-				AkSurfaceReflector.SetGeometryInstance(geometryID, geometryID, INVALID_ROOM_ID, tempGameObject.transform);
+				AkSurfaceReflector.SetGeometryFromMesh(mesh, tempGameObject.transform, geometryID, INVALID_ROOM_ID, false, false, false);
 #if UNITY_EDITOR
 				previousColliderType = typeof(UnityEngine.SphereCollider);
 				previousPosition = tempGameObject.transform.position;

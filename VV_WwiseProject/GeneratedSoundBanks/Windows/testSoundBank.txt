@@ -1,6 +1,0 @@
-Event	ID	Name			Wwise Object Path	Notes
-	1252261978	soundTest			\Default Work Unit\soundTest	
-
-In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	1020769064	VV	D:\Cuttlefish Games\VV\VV_WwiseProject\.cache\Windows\SFX\VV_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VV		2740144
-

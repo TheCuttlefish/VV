@@ -1,52 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{FBD7B8A0-D0C8-4E14-AABC-3334A060124E}" SchemaVersion="103">
+<WwiseDocument Type="WorkUnit" ID="{B030171F-BE5D-475E-A614-2B4831CAB52D}" SchemaVersion="103">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{FBD7B8A0-D0C8-4E14-AABC-3334A060124E}" PersistMode="Standalone">
+		<WorkUnit Name="Default Work Unit" ID="{B030171F-BE5D-475E-A614-2B4831CAB52D}" PersistMode="Standalone">
 			<ChildrenList>
-				<Sound Name="VV" ID="{77FA395F-E896-4C54-9F9A-49E369AAAF8A}" ShortID="964130035">
+				<Sound Name="soundTest" ID="{9F72774B-721A-4ECE-81AF-FA3FCF0FC7B9}" ShortID="499896461">
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B1697DF3-9ABF-4893-AEFD-31B27A0293FD}"/>
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B1F8AF25-8876-4D44-B90B-D3CCF525BD14}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{07A9D634-BF53-4DD1-BDE7-4F7077E94EF3}"/>
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DD17AC9E-739D-41DE-8E70-23EFF6212E26}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="VV" ID="{29696CBA-6F97-4910-A1EC-73206D1B122A}">
+						<AudioFileSource Name="Party favor or noise maker blow whistle roll up_BLASTWAVEFX_02416" ID="{5EC148DB-67A7-4A88-886E-CC7DF8B51FB4}">
 							<Language>SFX</Language>
-							<AudioFile>VV.wav</AudioFile>
+							<AudioFile>Party favor or noise maker blow whistle roll up_BLASTWAVEFX_02416.wav</AudioFile>
 							<MediaIDList>
-								<MediaID ID="1020769064"/>
+								<MediaID ID="787699486"/>
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
 					<ObjectLists/>
 					<ActiveSourceList>
-						<ActiveSource Name="VV" ID="{29696CBA-6F97-4910-A1EC-73206D1B122A}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="sa_seaside_amb" ID="{A9DB9C2C-891B-49E9-AB29-E2956453BAD1}" ShortID="54406277">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B1697DF3-9ABF-4893-AEFD-31B27A0293FD}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{07A9D634-BF53-4DD1-BDE7-4F7077E94EF3}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="sa_seaside_amb" ID="{DD7A9BCB-2037-4261-BAD4-9E5E6D758AE5}">
-							<Language>SFX</Language>
-							<AudioFile>sa_seaside_amb.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="913998771"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ObjectLists/>
-					<ActiveSourceList>
-						<ActiveSource Name="sa_seaside_amb" ID="{DD7A9BCB-2037-4261-BAD4-9E5E6D758AE5}" Platform="Linked"/>
+						<ActiveSource Name="Party favor or noise maker blow whistle roll up_BLASTWAVEFX_02416" ID="{5EC148DB-67A7-4A88-886E-CC7DF8B51FB4}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

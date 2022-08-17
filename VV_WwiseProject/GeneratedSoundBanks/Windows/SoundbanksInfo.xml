@@ -1,46 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>D:\Cuttlefish Games\VV\VV_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\Cuttlefish Games\VV\VV_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>D:\Cuttlefish Games\VV\VV_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>D:\Cuttlefish\VV\VV_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Cuttlefish\VV\VV_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Cuttlefish\VV\VV_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\Cuttlefish Games\VV\VV_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\Cuttlefish\VV\VV_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1278486446" Language="SFX" Hash="3314448168">
-			<ObjectPath>\SoundBanks\Default Work Unit\testSoundBank2</ObjectPath>
-			<ShortName>testSoundBank2</ShortName>
-			<Path>testSoundBank2.bnk</Path>
-			<IncludedEvents>
-				<Event Id="3660352924" Name="soundTest2" ObjectPath="\Events\Default Work Unit\soundTest2" DurationType="OneShot" DurationMin="25." DurationMax="25.">
-					<IncludedMemoryFiles>
-						<File Id="913998771" Language="SFX">
-							<ShortName>sa_seaside_amb.wav</ShortName>
-							<Path>SFX\sa_seaside_amb_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-			</IncludedEvents>
-		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX" Hash="3690994985">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1831431028" Language="SFX" Hash="3757041537">
-			<ObjectPath>\SoundBanks\Default Work Unit\testSoundBank</ObjectPath>
-			<ShortName>testSoundBank</ShortName>
-			<Path>testSoundBank.bnk</Path>
+		<SoundBank Id="2527844158" Language="SFX" Hash="2745556855">
+			<ObjectPath>\SoundBanks\Default Work Unit\test_sound_bank</ObjectPath>
+			<ShortName>test_sound_bank</ShortName>
+			<Path>test_sound_bank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1252261978" Name="soundTest" ObjectPath="\Events\Default Work Unit\soundTest" DurationType="OneShot" DurationMin="15.533334" DurationMax="15.533334">
+				<Event Id="1252261978" Name="soundTest" ObjectPath="\Events\Default Work Unit\soundTest" DurationType="OneShot" DurationMin="2.725034" DurationMax="2.725034">
 					<IncludedMemoryFiles>
-						<File Id="1020769064" Language="SFX">
-							<ShortName>VV.wav</ShortName>
-							<Path>SFX\VV_10C4C929.wem</Path>
+						<File Id="787699486" Language="SFX">
+							<ShortName>Party favor or noise maker blow whistle roll up_BLASTWAVEFX_02416.wav</ShortName>
+							<Path>SFX\Party favor or noise maker blow whistle roll up_BLASTWAVEFX_02416_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
