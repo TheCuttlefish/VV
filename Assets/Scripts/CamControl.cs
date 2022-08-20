@@ -60,7 +60,7 @@ public class CamControl : MonoBehaviour
 
     void Zoom()
     {
-        newZoom -= Input.mouseScrollDelta.y / (5 / (camZoom/2));
+        newZoom -= Input.mouseScrollDelta.y / (5);
         newZoom = Mathf.Clamp(newZoom, -1, 20);
         camZoom -= (camZoom - (defaultZoom + newZoom)) / 0.1f * Time.deltaTime;
         Camera.main.orthographicSize = camZoom;
