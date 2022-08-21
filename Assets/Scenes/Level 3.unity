@@ -1676,7 +1676,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: f73ede3267771cc4f8cba20d21d02565,
+    WwiseObjectReference: {fileID: 11400000, guid: 0888f6f4cb7022b48b466688b5753b77,
       type: 2}
   decodeBank: 0
   loadAsynchronous: 0
@@ -1948,7 +1948,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: a87de3aafbb55d74287874dd54fba37e,
+    WwiseObjectReference: {fileID: 11400000, guid: 0888f6f4cb7022b48b466688b5753b77,
       type: 2}
   decodeBank: 0
   loadAsynchronous: 0
