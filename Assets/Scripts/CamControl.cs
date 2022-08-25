@@ -24,6 +24,9 @@ public class CamControl : MonoBehaviour
     bool showTree = false;
     Vector3 treePos;
     float showTreeTimer;
+
+
+
     // Update is called once per frame
     void Update()
     {
@@ -49,7 +52,9 @@ public class CamControl : MonoBehaviour
         }
 
 
-
+        transform.position = new Vector3(
+            Mathf.Clamp(transform.position.x, widthLower, widthUpper),
+            Mathf.Clamp(transform.position.y, heightLower, heightUpper), -10);
         LevelReset();
 
 
@@ -65,7 +70,7 @@ public class CamControl : MonoBehaviour
     {
         //------------
         //get new point when shift is pressed
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+      //  if (Input.GetKeyDown(KeyCode.LeftShift))
             mousePos = Camera.main.ScreenToWorldPoint(new Vector3(screenPoint.x, screenPoint.y, +10));
         //move to that point
         if (Input.GetKey(KeyCode.LeftShift)) Camera.main.transform.position -= (Camera.main.transform.position - (mousePos - (Vector3.forward * 10))) / 150;
@@ -75,7 +80,9 @@ public class CamControl : MonoBehaviour
 
     void ScreenPanKeys()
     {
-        transform.Translate(Input.GetAxis("Horizontal") / 10, Input.GetAxis("Vertical") / 10, 0);
+        transform.Translate(  Input.GetAxis("Horizontal") / 10, Input.GetAxis("Vertical") / 10, 0);
+
+        
     }
 
 
@@ -113,6 +120,16 @@ public class CamControl : MonoBehaviour
     private void LevelReset()
     {
         if (Input.GetKeyDown(KeyCode.R)) SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    float heightUpper, heightLower, widthUpper, widthLower;
+    public void SetBorder(float _widthUpper, float _widthLower, float _heightUpper, float _heightLower)
+    {
+        heightUpper = _heightUpper;
+        heightLower = _heightLower;
+        widthUpper = _widthUpper;
+        widthLower = _widthLower;
+        
     }
 
 }
