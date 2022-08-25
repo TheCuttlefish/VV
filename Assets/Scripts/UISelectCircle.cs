@@ -7,7 +7,7 @@ public class UISelectCircle : MonoBehaviour
     float scale = 0;
     float newScale = 1;
     float scaleSpeed = 0.2f;
-  
+    bool playShowSound = false;
     void Update()
     {
         scale -= (  scale - newScale) / scaleSpeed * Time.deltaTime;
@@ -18,10 +18,20 @@ public class UISelectCircle : MonoBehaviour
     {
        
         newScale = 1;
+        if (!playShowSound)
+        {
+        //play bubble appear sound here!
+        }
+        playShowSound = true;
     }
     public void Hide()
     {
         newScale = 0;
+        if (playShowSound)
+        {
+            //play bubble disappear sound here!
+        }
+        playShowSound = false;
     }
     public void ShowLimit()
     {

@@ -74,7 +74,7 @@ public class Cursor : MonoBehaviour
         {
             if (selectedTip != null)
             {
-                bubbleUI.GetComponent<UISelectCircle>().ShowLimit();
+                bubbleUI.GetComponent<UISelectCircle>().ShowLimit();// forgot what this does??
                 bubbleUI.transform.position = selectedTip.transform.position;
             }
             else
@@ -158,6 +158,7 @@ public class Cursor : MonoBehaviour
             if (selectedTip == null) return;
             Debug.DrawLine(transform.position, selectedTip.transform.position);//draw line
             dist = Vector2.Distance(transform.position, selectedTip.transform.position);//find dist (not used)
+            //use this variable for bubble size (dist float) dist as in distance :D
             vineAim.transform.position = selectedTip.transform.position;
             vineAim.transform.up = transform.position - selectedTip.transform.position;
             vineAim.transform.localScale = new Vector3(0.075f, Mathf.Clamp(dist,0,1.1f), 1);

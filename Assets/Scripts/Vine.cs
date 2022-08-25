@@ -11,10 +11,11 @@ public class Vine : MonoBehaviour
     private Color originalVineColour;
     private GameObject vineTipArt;
     int currentSize = 0;
-
+    float velocityMag; // velocity magnitude - how fast the vine is moving / colliding
 
     public void Awake()
     {
+       
         currentSize = 0;
         vineArt = transform.Find("artContainer").transform.Find("vineArt").gameObject; // be careful with finding vine art by name....
         vineTipArt = transform.Find("tip").transform.Find("tipArt").gameObject;
@@ -90,6 +91,10 @@ public class Vine : MonoBehaviour
 
     private void Update()
     {
+        
+        velocityMag = GetComponent<Rigidbody2D>().velocity.magnitude;
+        Debug.DrawLine(transform.position, transform.position + (Vector3.up * velocityMag), Color.red);
+
         if (GetComponent<FixedJoint2D>().connectedBody == null)
         {
             Slice();
@@ -119,4 +124,16 @@ public class Vine : MonoBehaviour
         }
 
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+
+
+        // add collision sound here !  (from 0 to 50+??? will need to playtest!) 
+        // use collsionMag variable
+        // I may need to change it so it only listens to active vine.... maybe too noisy otherwise
+      
+    }
+
+
 }
