@@ -23,6 +23,7 @@ public class Tree : MonoBehaviour
         {
             collision.transform.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
             branchContainer.SetActive(true);
+            GameObject.Find("Main Camera").GetComponent<CamControl>().Win(transform.position);
             win = true;
         }
     }
