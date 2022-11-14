@@ -20,7 +20,7 @@
 				<AuxBus Id="4122393694" Name="cave" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\cave"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="2527844158" Language="SFX" Hash="3609180402">
+		<SoundBank Id="2527844158" Language="SFX" Hash="1450798834">
 			<ObjectPath>\SoundBanks\Default Work Unit\test_sound_bank</ObjectPath>
 			<ShortName>test_sound_bank</ShortName>
 			<Path>test_sound_bank.bnk</Path>
@@ -151,6 +151,21 @@
 						<File Id="850571960" Language="SFX">
 							<ShortName>UI_bubble_appear_02.wav</ShortName>
 							<Path>SFX\UI_bubble_appear_02_31222D1F.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="4122393694" Name="cave" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\cave"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2560769614" Name="sliceAimLoopStart" ObjectPath="\Events\Default Work Unit\all\UI\sliceAimLoopStart" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="78372973" Language="SFX">
+							<ShortName>sliceAim_01.wav</ShortName>
+							<Path>SFX\sliceAim_01_D79FB2B7.wem</Path>
+						</File>
+						<File Id="1055063310" Language="SFX">
+							<ShortName>sliceAim_02.wav</ShortName>
+							<Path>SFX\sliceAim_02_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>

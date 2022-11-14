@@ -149,6 +149,32 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
+										<Action Name="" ID="{193BAE39-6329-4D9B-94F8-FA5C3390FB22}" ShortID="6823229">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sliceAim" ID="{67B66854-24A6-4FF8-A800-695D17CD4ADE}" WorkUnitID="{B030171F-BE5D-475E-A614-2B4831CAB52D}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="sliceAimLoopStart" ID="{935F4EBC-BA45-4A02-9F84-5937F7813F7D}">
+									<ChildrenList>
+										<Action Name="" ID="{36E9B74A-6E65-4D8E-A7AC-BEF37A359BE0}" ShortID="65858494">
+											<PropertyList>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sliceAim" ID="{67B66854-24A6-4FF8-A800-695D17CD4ADE}" WorkUnitID="{B030171F-BE5D-475E-A614-2B4831CAB52D}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 									</ChildrenList>
 								</Event>
 							</ChildrenList>

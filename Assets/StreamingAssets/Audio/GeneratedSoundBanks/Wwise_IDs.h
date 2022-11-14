@@ -18,6 +18,7 @@ namespace AK
         static const AkUniqueID AMBMOUNTAINRAINTHUNDER = 1325171166U;
         static const AkUniqueID BUBBLEAPPEAR = 3076357196U;
         static const AkUniqueID BUBBLEDISAPPEAR = 3207120222U;
+        static const AkUniqueID SLICEAIMLOOPSTART = 2560769614U;
         static const AkUniqueID SLICEIMPACTVINE = 1040398031U;
         static const AkUniqueID SLICERELEASED = 764784016U;
         static const AkUniqueID SOUNDTEST = 1252261978U;

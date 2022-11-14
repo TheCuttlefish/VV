@@ -2130,6 +2130,98 @@
 									</ChildrenList>
 									<ObjectLists/>
 								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="sliceAim" ID="{67B66854-24A6-4FF8-A800-695D17CD4ADE}" ShortID="1029187746">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-500</Value>
+											</ValueList>
+										</Property>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="90"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B1F8AF25-8876-4D44-B90B-D3CCF525BD14}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DD17AC9E-739D-41DE-8E70-23EFF6212E26}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sliceAim_01" ID="{BC0E2D11-55E2-4E5D-BEF6-8696745E30AF}" ShortID="949271344">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B1F8AF25-8876-4D44-B90B-D3CCF525BD14}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DD17AC9E-739D-41DE-8E70-23EFF6212E26}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sliceAim_01" ID="{7A6DD88E-F976-44A5-9BDC-3D01032D32E2}">
+													<Language>SFX</Language>
+													<AudioFile>sliceAim_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="78372973"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sliceAim_01" ID="{7A6DD88E-F976-44A5-9BDC-3D01032D32E2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sliceAim_02" ID="{9B049A31-9674-4063-9048-287747BEA5BA}" ShortID="1071703123">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B1F8AF25-8876-4D44-B90B-D3CCF525BD14}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DD17AC9E-739D-41DE-8E70-23EFF6212E26}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sliceAim_02" ID="{4AF94F1B-DCD7-4DDD-B873-19A862419AB6}">
+													<Language>SFX</Language>
+													<AudioFile>sliceAim_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1055063310"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sliceAim_02" ID="{4AF94F1B-DCD7-4DDD-B873-19A862419AB6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
 							</ChildrenList>
 							<ObjectLists/>
 						</ActorMixer>

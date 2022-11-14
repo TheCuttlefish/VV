@@ -7,6 +7,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2142228959	vineImpact			\Default Work Unit\all\vine\vineImpact	
 	2264783118	aimNewVine			\Default Work Unit\all\UI\aimNewVine	
 	2435006360	ambCave			\Default Work Unit\all\amb\ambCave	
+	2560769614	sliceAimLoopStart			\Default Work Unit\all\UI\sliceAimLoopStart	
 	3076357196	bubbleAppear			\Default Work Unit\all\UI\bubbleAppear	
 	3207120222	bubbleDisappear			\Default Work Unit\all\UI\bubbleDisappear	
 	3485768906	vineMovement			\Default Work Unit\all\vine\vineMovement	
@@ -32,6 +33,7 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	11445115	UI_bubble_appear_03	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\UI_bubble_appear_03_7A8F9308.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\bubble\bubbleAppear\UI_bubble_appear_03		25302
 	26958975	sliceReleased_04	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\sliceReleased_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\slicer\sliceReleased\sliceReleased_04		276736
+	78372973	sliceAim_01	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\sliceAim_01_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\slicer\sliceAim\sliceAim_01		2995572
 	112681207	UI_vineAddBubbleLoop_03-01	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\UI_vineAddBubbleLoop_03-02_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\bubble\aimNewVine\bubbleIncrease\UI_vineBubbleLoop\UI_vineAddBubbleLoop_03-01		2995572
 	124233412	UI_bubble_appear_01	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\UI_bubble_appear_01_8CE4A3BC.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\bubble\bubbleDisappear\UI_bubble_appear_01		13018
 	134644379	sliceReleased_01	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\sliceReleased_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\slicer\sliceReleased\sliceReleased_01		294064
@@ -83,6 +85,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1028619047	treeSprout_01	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\treeSprout_01-01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\tree\treeSprout\treeSprout_01		805624
 	1039848177	amb_thunder_02	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\amb_thunder_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\mountainRain\amb_mountainRain_thunder\thunder_oneshots\amb_thunder_02		2293264
 	1054741086	UI_aimNewVine_01	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\UI_aimNewVine_01_2E0B0025.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\bubble\aimNewVine\aimNewVine\UI_aimNewVine_01		325836
+	1055063310	sliceAim_02	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\sliceAim_02_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\slicer\sliceAim\sliceAim_02		2995572
 	1067372265	sliceImpactVine_01	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\sliceImpactVine_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\slicer\sliceImpactVine\sliceImpactVine_01		145444
 	1072226370	sliceReleased_02	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\sliceReleased_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\slicer\sliceReleased\sliceReleased_02		311704
 

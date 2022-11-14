@@ -42,6 +42,7 @@ public class SlicerUI : MonoBehaviour
             sliceStartPos = Camera.main.ScreenToWorldPoint(Input.mousePosition) - offset;
             slicerArt.GetComponent<SlicerObject>().StartSlicing();
             spriteEffect.SetActive(false);
+            AkSoundEngine.PostEvent("sliceAimLoopStart", gameObject);
         }
 
         if (Input.GetMouseButtonUp(1))
