@@ -56,6 +56,7 @@ public class SlicerUI : MonoBehaviour
             sliceEffect.SetActive(true);
             spriteEffect.transform.position = transform.position;
             spriteEffect.SetActive(true);
+            AkSoundEngine.PostEvent("sliceReleased", gameObject);
            
         }
 

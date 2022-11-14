@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{2F4EB74D-55F8-4A34-B682-BAD33EDFE82E}" SchemaVersion="103">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{2F4EB74D-55F8-4A34-B682-BAD33EDFE82E}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{2F4EB74D-55F8-4A34-B682-BAD33EDFE82E}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="vineSpeed" ID="{A6AD8D87-5228-44F7-A9FA-634E44497D3C}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

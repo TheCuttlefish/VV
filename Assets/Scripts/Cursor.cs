@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -58,10 +58,10 @@ public class Cursor : MonoBehaviour
             if (selectedTip == null) //disappear
             {
 
-                bubbleUI.GetComponent<UISelectCircle>().Hide();
+                bubbleUI.GetComponent<UISelectCircle>().Hide();                
                 if (lastActiveVine != null) bubbleUI.transform.position = lastActiveVine.transform.position;
                 bubbleUI.GetComponent<SpriteRenderer>().color -= (bubbleUI.GetComponent<SpriteRenderer>().color - new Color(0, 1, 1, 0)) / 0.06f * Time.deltaTime;
-
+                                
             }
             else//appear
             {
@@ -69,6 +69,7 @@ public class Cursor : MonoBehaviour
                 bubbleUI.GetComponent<UISelectCircle>().Show();
                 bubbleUI.transform.position = selectedTip.transform.position;
                 bubbleUI.GetComponent<SpriteRenderer>().color -= (bubbleUI.GetComponent<SpriteRenderer>().color - new Color(0, 1, 1, 1)) / 0.8f * Time.deltaTime;
+                
             }
         }else //----not sure if this section is logically correct!!! (seems to work for now)
         {
@@ -80,7 +81,7 @@ public class Cursor : MonoBehaviour
             else
             {
                 bubbleUI.GetComponent<UISelectCircle>().Hide();
-               
+                               
             }
                 lastActiveVine = null;
             
@@ -93,13 +94,13 @@ public class Cursor : MonoBehaviour
             {
                 spriteCursor.transform.position -= (spriteCursor.transform.position - transform.position) / 0.2f * Time.deltaTime;//speed away
                 spriteCursor.transform.localScale -= (spriteCursor.transform.localScale - Vector3.zero) / 0.05f * Time.deltaTime;//scale away
-
+                                
             }
             else // on appear!
             {
                 spriteCursor.transform.position -= (spriteCursor.transform.position - selectedTip.transform.position) / 0.2f * Time.deltaTime;//
                 spriteCursor.transform.localScale -= (spriteCursor.transform.localScale - originalSrpiteCursorScale) / 0.05f * Time.deltaTime;
-
+                
             }
         
         
@@ -108,11 +109,11 @@ public class Cursor : MonoBehaviour
     {
         //mouse position
         transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) - offset;
-      
+                      
         //ray cast
         hit = Physics2D.Raycast(transform.position, Vector3.zero, Mathf.Infinity, tip);
         vineAim.transform.localScale = new Vector3(0.075f, 0, 1);
-
+                
 
         if (creatineVine == false)
         {
@@ -163,6 +164,7 @@ public class Cursor : MonoBehaviour
             vineAim.transform.up = transform.position - selectedTip.transform.position;
             vineAim.transform.localScale = new Vector3(0.075f, Mathf.Clamp(dist,0,1.1f), 1);
             GAME.VINE_LINE_Z = vineAim.transform.localEulerAngles.z;
+            AkSoundEngine.PostEvent("aimNewVine", gameObject);
 
 
             //show when you can spawn it
@@ -187,6 +189,7 @@ public class Cursor : MonoBehaviour
                 spawnDistanceReached = false;
                 if (selectedTip == null) return;
                 selectedTip.transform.parent.GetComponent<Vine>().Grow();
+                AkSoundEngine.PostEvent("vineAdd", gameObject);
                
             }
             selectedTip = null;

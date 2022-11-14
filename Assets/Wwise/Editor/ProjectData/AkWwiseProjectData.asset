@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 6167145fd3f37e4ba42024e8bae59b67
     GuidInternal: 
-    m_lastTime: -8585403392647463789
+    m_lastTime: -8585408673756845661
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,8 +38,25 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 9eac17dd9d73de418e7023eff6212e26
     GuidInternal: 
-    m_lastTime: -8585403392648942431
+    m_lastTime: -8585340157736392888
     List:
+    - name: cave
+      guid: e1a85e7595bd2544af7cc8d90620927e
+      id: 4122393694
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9eac17dd9d73de418e7023eff6212e26
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: cave
+        ObjectType: 1
+        guid: e1a85e7595bd2544af7cc8d90620927e
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\cave
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -54,6 +71,23 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: mountainTop
+      guid: 72159e3ebeba774595a550445dcfac48
+      id: 946954817
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9eac17dd9d73de418e7023eff6212e26
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: mountainTop
+        ObjectType: 1
+        guid: 72159e3ebeba774595a550445dcfac48
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\mountainTop
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -66,7 +100,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 28ed7f6290eeb842b4bc5fc3f1dcb268
     GuidInternal: 
-    m_lastTime: -8585403392647930461
+    m_lastTime: -8585361562227842799
     List:
     - name: test_sound_bank
       guid: 64326a70178ed349bc362ab8016acb7f
@@ -94,8 +128,206 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: da33ff390a9cb4429753635bd368f4a9
     GuidInternal: 
-    m_lastTime: -8585403392650401451
+    m_lastTime: -8585331877123445081
     List:
+    - name: aimNewVine
+      guid: 8a69a0b2b40e954f80c7e899f2ae11cb
+      id: 2264783118
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: da33ff390a9cb4429753635bd368f4a9
+      - ElementName: all
+        ObjectType: 4
+        guid: 597f1e2a6c356c49b8a01e9e59388e9f
+      - ElementName: UI
+        ObjectType: 4
+        guid: 3057d78b57d85049bc9c36ace0ba8de0
+      - ElementName: aimNewVine
+        ObjectType: 3
+        guid: 8a69a0b2b40e954f80c7e899f2ae11cb
+      Path: Events\Default Work Unit\all\UI\aimNewVine
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: all
+      guid: 597f1e2a6c356c49b8a01e9e59388e9f
+      id: 1100754030
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: da33ff390a9cb4429753635bd368f4a9
+      - ElementName: all
+        ObjectType: 4
+        guid: 597f1e2a6c356c49b8a01e9e59388e9f
+      Path: Events\Default Work Unit\all
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: amb
+      guid: 12cb504f1c129b449c54fbd114ca3e62
+      id: 1117531639
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: da33ff390a9cb4429753635bd368f4a9
+      - ElementName: all
+        ObjectType: 4
+        guid: 597f1e2a6c356c49b8a01e9e59388e9f
+      - ElementName: amb
+        ObjectType: 4
+        guid: 12cb504f1c129b449c54fbd114ca3e62
+      Path: Events\Default Work Unit\all\amb
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: ambCave
+      guid: abd40a97b93a6346912590d60db85caa
+      id: 2435006360
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: da33ff390a9cb4429753635bd368f4a9
+      - ElementName: all
+        ObjectType: 4
+        guid: 597f1e2a6c356c49b8a01e9e59388e9f
+      - ElementName: amb
+        ObjectType: 4
+        guid: 12cb504f1c129b449c54fbd114ca3e62
+      - ElementName: ambCave
+        ObjectType: 3
+        guid: abd40a97b93a6346912590d60db85caa
+      Path: Events\Default Work Unit\all\amb\ambCave
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: ambMountainRainThunder
+      guid: 06807e2e9bdedb469b691955e7158ccf
+      id: 1325171166
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: da33ff390a9cb4429753635bd368f4a9
+      - ElementName: all
+        ObjectType: 4
+        guid: 597f1e2a6c356c49b8a01e9e59388e9f
+      - ElementName: amb
+        ObjectType: 4
+        guid: 12cb504f1c129b449c54fbd114ca3e62
+      - ElementName: ambMountainRainThunder
+        ObjectType: 3
+        guid: 06807e2e9bdedb469b691955e7158ccf
+      Path: Events\Default Work Unit\all\amb\ambMountainRainThunder
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: bubbleAppear
+      guid: 936f99badc39104c80d8e2fe716518bc
+      id: 3076357196
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: da33ff390a9cb4429753635bd368f4a9
+      - ElementName: all
+        ObjectType: 4
+        guid: 597f1e2a6c356c49b8a01e9e59388e9f
+      - ElementName: UI
+        ObjectType: 4
+        guid: 3057d78b57d85049bc9c36ace0ba8de0
+      - ElementName: bubbleAppear
+        ObjectType: 3
+        guid: 936f99badc39104c80d8e2fe716518bc
+      Path: Events\Default Work Unit\all\UI\bubbleAppear
+      maxAttenuation: 0
+      maxDuration: 0.292314
+      minDuration: 0.286139
+    - name: bubbleDisappear
+      guid: 4baa9d5244d157418a311a3d32264f60
+      id: 3207120222
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: da33ff390a9cb4429753635bd368f4a9
+      - ElementName: all
+        ObjectType: 4
+        guid: 597f1e2a6c356c49b8a01e9e59388e9f
+      - ElementName: UI
+        ObjectType: 4
+        guid: 3057d78b57d85049bc9c36ace0ba8de0
+      - ElementName: bubbleDisappear
+        ObjectType: 3
+        guid: 4baa9d5244d157418a311a3d32264f60
+      Path: Events\Default Work Unit\all\UI\bubbleDisappear
+      maxAttenuation: 0
+      maxDuration: 0.209527
+      minDuration: 0.191756
+    - name: sliceImpactVine
+      guid: f80e28e46e168b4aa22b994ce5f8d799
+      id: 1040398031
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: da33ff390a9cb4429753635bd368f4a9
+      - ElementName: all
+        ObjectType: 4
+        guid: 597f1e2a6c356c49b8a01e9e59388e9f
+      - ElementName: UI
+        ObjectType: 4
+        guid: 3057d78b57d85049bc9c36ace0ba8de0
+      - ElementName: sliceImpactVine
+        ObjectType: 3
+        guid: f80e28e46e168b4aa22b994ce5f8d799
+      Path: Events\Default Work Unit\all\UI\sliceImpactVine
+      maxAttenuation: 0
+      maxDuration: 1.369743
+      minDuration: 0.82415
+    - name: sliceReleased
+      guid: a5127a10b6a04d4396ebcdbdf6fd3da6
+      id: 764784016
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: da33ff390a9cb4429753635bd368f4a9
+      - ElementName: all
+        ObjectType: 4
+        guid: 597f1e2a6c356c49b8a01e9e59388e9f
+      - ElementName: UI
+        ObjectType: 4
+        guid: 3057d78b57d85049bc9c36ace0ba8de0
+      - ElementName: sliceReleased
+        ObjectType: 3
+        guid: a5127a10b6a04d4396ebcdbdf6fd3da6
+      Path: Events\Default Work Unit\all\UI\sliceReleased
+      maxAttenuation: 0
+      maxDuration: 1.300768
+      minDuration: 1.154813
     - name: soundTest
       guid: 563d10b500efe647a766495c5f29e0b0
       id: 1252261978
@@ -106,13 +338,148 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: da33ff390a9cb4429753635bd368f4a9
+      - ElementName: all
+        ObjectType: 4
+        guid: 597f1e2a6c356c49b8a01e9e59388e9f
       - ElementName: soundTest
         ObjectType: 3
         guid: 563d10b500efe647a766495c5f29e0b0
-      Path: Events\Default Work Unit\soundTest
+      Path: Events\Default Work Unit\all\soundTest
       maxAttenuation: 0
-      maxDuration: 2.725034
-      minDuration: 2.725034
+      maxDuration: 5.491147
+      minDuration: 2.2211
+    - name: treeSprout
+      guid: 2db43097122cc14e971dd34ddb63d86f
+      id: 148502942
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: da33ff390a9cb4429753635bd368f4a9
+      - ElementName: all
+        ObjectType: 4
+        guid: 597f1e2a6c356c49b8a01e9e59388e9f
+      - ElementName: UI
+        ObjectType: 4
+        guid: 3057d78b57d85049bc9c36ace0ba8de0
+      - ElementName: treeSprout
+        ObjectType: 3
+        guid: 2db43097122cc14e971dd34ddb63d86f
+      Path: Events\Default Work Unit\all\UI\treeSprout
+      maxAttenuation: 0
+      maxDuration: 4.566667
+      minDuration: 4.566667
+    - name: UI
+      guid: 3057d78b57d85049bc9c36ace0ba8de0
+      id: 1551306167
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: da33ff390a9cb4429753635bd368f4a9
+      - ElementName: all
+        ObjectType: 4
+        guid: 597f1e2a6c356c49b8a01e9e59388e9f
+      - ElementName: UI
+        ObjectType: 4
+        guid: 3057d78b57d85049bc9c36ace0ba8de0
+      Path: Events\Default Work Unit\all\UI
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: vine
+      guid: cf3771cefc71b5418f414387b724cee4
+      id: 3319842909
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: da33ff390a9cb4429753635bd368f4a9
+      - ElementName: all
+        ObjectType: 4
+        guid: 597f1e2a6c356c49b8a01e9e59388e9f
+      - ElementName: vine
+        ObjectType: 4
+        guid: cf3771cefc71b5418f414387b724cee4
+      Path: Events\Default Work Unit\all\vine
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: vineAdd
+      guid: e4c48a6a78f08c4d8ff271fa6afb4895
+      id: 3952134086
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: da33ff390a9cb4429753635bd368f4a9
+      - ElementName: all
+        ObjectType: 4
+        guid: 597f1e2a6c356c49b8a01e9e59388e9f
+      - ElementName: vine
+        ObjectType: 4
+        guid: cf3771cefc71b5418f414387b724cee4
+      - ElementName: vineAdd
+        ObjectType: 3
+        guid: e4c48a6a78f08c4d8ff271fa6afb4895
+      Path: Events\Default Work Unit\all\vine\vineAdd
+      maxAttenuation: 0
+      maxDuration: 3
+      minDuration: 2.7
+    - name: vineImpact
+      guid: 0703841995334440aa3ea2c7271a19f2
+      id: 2142228959
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: da33ff390a9cb4429753635bd368f4a9
+      - ElementName: all
+        ObjectType: 4
+        guid: 597f1e2a6c356c49b8a01e9e59388e9f
+      - ElementName: vine
+        ObjectType: 4
+        guid: cf3771cefc71b5418f414387b724cee4
+      - ElementName: vineImpact
+        ObjectType: 3
+        guid: 0703841995334440aa3ea2c7271a19f2
+      Path: Events\Default Work Unit\all\vine\vineImpact
+      maxAttenuation: 0
+      maxDuration: 0.809126
+      minDuration: 0.532919
+    - name: vineMovement
+      guid: e5bea7c02fbc4c4391e976ff3d5991f5
+      id: 3485768906
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: da33ff390a9cb4429753635bd368f4a9
+      - ElementName: all
+        ObjectType: 4
+        guid: 597f1e2a6c356c49b8a01e9e59388e9f
+      - ElementName: vine
+        ObjectType: 4
+        guid: cf3771cefc71b5418f414387b724cee4
+      - ElementName: vineMovement
+        ObjectType: 3
+        guid: e5bea7c02fbc4c4391e976ff3d5991f5
+      Path: Events\Default Work Unit\all\vine\vineMovement
+      maxAttenuation: 75
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -125,8 +492,22 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 4db74e2ff855344ab682bad33edfe82e
     GuidInternal: 
-    m_lastTime: -8585403392650305951
-    List: []
+    m_lastTime: -8585361558555671189
+    List:
+    - name: vineSpeed
+      guid: 878dada62852f744a9fa634e44497d3c
+      id: 1631177638
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4db74e2ff855344ab682bad33edfe82e
+      - ElementName: vineSpeed
+        ObjectType: 13
+        guid: 878dada62852f744a9fa634e44497d3c
+      Path: Game Parameters\Default Work Unit\vineSpeed
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -139,7 +520,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 1da1e13dbebc864c86b0aecc6c73219a
     GuidInternal: 
-    m_lastTime: -8585403392647749762
+    m_lastTime: -8585408673756785827
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -153,7 +534,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 8832463b12538e488e71b795e115f98d
     GuidInternal: 
-    m_lastTime: -8585403392647649551
+    m_lastTime: -8585408673756535298
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -167,11 +548,11 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 32fe65a04c1e7a4c87802437e7a339c8
     GuidInternal: 
-    m_lastTime: -8585403392647559327
+    m_lastTime: -8585408673758052436
     List: []
-  ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedFileSystemItemIds: 02000000030000000400000005000000060000000b0000000c000000
+  ExpandedWaapiItemIds: 020000000300000006000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 0
+  currentDataSource: 1
   CurrentPluginConfig: 

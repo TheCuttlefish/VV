@@ -12,7 +12,7 @@ public class Vine : MonoBehaviour
     private GameObject vineTipArt;
     int currentSize = 0;
     float velocityMag; // velocity magnitude - how fast the vine is moving / colliding
-
+    
     public void Awake()
     {
        
@@ -47,7 +47,11 @@ public class Vine : MonoBehaviour
             }
             
             if (parentVine != null) parentVine.GetComponent<Vine>().IncreaseSize(currentSize);
+            
         }
+
+        AkSoundEngine.PostEvent("vineAdd", gameObject);
+
     }
 
     public void SetParentVine(GameObject _parentVine)
@@ -94,7 +98,8 @@ public class Vine : MonoBehaviour
         
         velocityMag = GetComponent<Rigidbody2D>().velocity.magnitude;
         Debug.DrawLine(transform.position, transform.position + (Vector3.up * velocityMag), Color.red);
-
+        AkSoundEngine.SetRTPCValue("vineSpeed", velocityMag);
+        
         if (GetComponent<FixedJoint2D>().connectedBody == null)
         {
             Slice();
@@ -125,10 +130,11 @@ public class Vine : MonoBehaviour
 
     }
 
+    
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
-
-
+        AkSoundEngine.PostEvent("vineImpact", gameObject);            
         // add collision sound here !  (from 0 to 50+??? will need to playtest!) 
         // use collsionMag variable
         // I may need to change it so it only listens to active vine.... maybe too noisy otherwise

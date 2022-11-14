@@ -20,7 +20,7 @@ public class UISelectCircle : MonoBehaviour
         newScale = 1;
         if (!playShowSound)
         {
-        //play bubble appear sound here!
+            AkSoundEngine.PostEvent("bubbleAppear", gameObject);//play bubble appear sound here!
         }
         playShowSound = true;
     }
@@ -29,7 +29,7 @@ public class UISelectCircle : MonoBehaviour
         newScale = 0;
         if (playShowSound)
         {
-            //play bubble disappear sound here!
+            AkSoundEngine.PostEvent("bubbleDisappear", gameObject);//play bubble disappear sound here!
         }
         playShowSound = false;
     }

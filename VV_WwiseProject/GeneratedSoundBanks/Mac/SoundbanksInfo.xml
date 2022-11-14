@@ -11,17 +11,204 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2754342975">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3673990803">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="946954817" Name="mountainTop" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\mountainTop"/>
+				<AuxBus Id="4122393694" Name="cave" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\cave"/>
+			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="2527844158" Language="SFX" Hash="2745556855">
+		<SoundBank Id="2527844158" Language="SFX" Hash="3609180402">
 			<ObjectPath>\SoundBanks\Default Work Unit\test_sound_bank</ObjectPath>
 			<ShortName>test_sound_bank</ShortName>
 			<Path>test_sound_bank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1252261978" Name="soundTest" ObjectPath="\Events\Default Work Unit\soundTest" DurationType="OneShot" DurationMin="2.725034" DurationMax="2.725034">
+				<Event Id="2264783118" Name="aimNewVine" ObjectPath="\Events\Default Work Unit\all\UI\aimNewVine" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="112681207" Language="SFX">
+							<ShortName>UI_vineAddBubbleLoop_03-02.wav</ShortName>
+							<Path>SFX\UI_vineAddBubbleLoop_03-02_D79FB2B7.wem</Path>
+						</File>
+						<File Id="179861526" Language="SFX">
+							<ShortName>UI_vineAddBubbleLoop_02-02.wav</ShortName>
+							<Path>SFX\UI_vineAddBubbleLoop_02-02_D79FB2B7.wem</Path>
+						</File>
+						<File Id="445826259" Language="SFX">
+							<ShortName>UI_bubble_appear_03.wav</ShortName>
+							<Path>SFX\UI_bubble_appear_03_78CB3C4C.wem</Path>
+						</File>
+						<File Id="594074893" Language="SFX">
+							<ShortName>UI_aimNewVine_03.wav</ShortName>
+							<Path>SFX\UI_aimNewVine_03_A9FCD67B.wem</Path>
+						</File>
+						<File Id="611027789" Language="SFX">
+							<ShortName>UI_bubble_appear_01.wav</ShortName>
+							<Path>SFX\UI_bubble_appear_01_7C345EA2.wem</Path>
+						</File>
+						<File Id="616014920" Language="SFX">
+							<ShortName>UI_aimNewVine_02.wav</ShortName>
+							<Path>SFX\UI_aimNewVine_02_0EBC53FB.wem</Path>
+						</File>
+						<File Id="672179146" Language="SFX">
+							<ShortName>UI_aimNewVine_05.wav</ShortName>
+							<Path>SFX\UI_aimNewVine_05_3C84D389.wem</Path>
+						</File>
+						<File Id="723057964" Language="SFX">
+							<ShortName>UI_aimNewVine_04.wav</ShortName>
+							<Path>SFX\UI_aimNewVine_04_533BC5AA.wem</Path>
+						</File>
+						<File Id="728865526" Language="SFX">
+							<ShortName>UI_vineAddBubbleLoop_01-02.wav</ShortName>
+							<Path>SFX\UI_vineAddBubbleLoop_01-02_D79FB2B7.wem</Path>
+						</File>
+						<File Id="755228075" Language="SFX">
+							<ShortName>UI_bubble_appear_02.wav</ShortName>
+							<Path>SFX\UI_bubble_appear_02_0B8537EA.wem</Path>
+						</File>
+						<File Id="1054741086" Language="SFX">
+							<ShortName>UI_aimNewVine_01.wav</ShortName>
+							<Path>SFX\UI_aimNewVine_01_2E0B0025.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="4122393694" Name="cave" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\cave"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2435006360" Name="ambCave" ObjectPath="\Events\Default Work Unit\all\amb\ambCave" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="686413517" Language="SFX">
+							<ShortName>amb_cave.wav</ShortName>
+							<Path>SFX\amb_cave_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1325171166" Name="ambMountainRainThunder" ObjectPath="\Events\Default Work Unit\all\amb\ambMountainRainThunder" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="154756458" Language="SFX">
+							<ShortName>opening_draft_01.wav</ShortName>
+							<Path>SFX\opening_draft_01_D79FB2B7.wem</Path>
+						</File>
+						<File Id="532583028" Language="SFX">
+							<ShortName>amb_mountainRain.wav</ShortName>
+							<Path>SFX\amb_mountainRain_D79FB2B7.wem</Path>
+						</File>
+						<File Id="680210286" Language="SFX">
+							<ShortName>amb_thunder_01.wav</ShortName>
+							<Path>SFX\amb_thunder_01_10C4C929.wem</Path>
+						</File>
+						<File Id="720679813" Language="SFX">
+							<ShortName>amb_thunder_04.wav</ShortName>
+							<Path>SFX\amb_thunder_04_10C4C929.wem</Path>
+						</File>
+						<File Id="779791086" Language="SFX">
+							<ShortName>amb_thunder_03.wav</ShortName>
+							<Path>SFX\amb_thunder_03_10C4C929.wem</Path>
+						</File>
+						<File Id="838884173" Language="SFX">
+							<ShortName>amb_thunder_05.wav</ShortName>
+							<Path>SFX\amb_thunder_05_10C4C929.wem</Path>
+						</File>
+						<File Id="1039848177" Language="SFX">
+							<ShortName>amb_thunder_02.wav</ShortName>
+							<Path>SFX\amb_thunder_02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="4122393694" Name="cave" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\cave"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="3076357196" Name="bubbleAppear" ObjectPath="\Events\Default Work Unit\all\UI\bubbleAppear" DurationType="OneShot" DurationMin="0.286139" DurationMax="0.292314">
+					<IncludedMemoryFiles>
+						<File Id="11445115" Language="SFX">
+							<ShortName>UI_bubble_appear_03.wav</ShortName>
+							<Path>SFX\UI_bubble_appear_03_7A8F9308.wem</Path>
+						</File>
+						<File Id="135402697" Language="SFX">
+							<ShortName>UI_bubble_appear_01.wav</ShortName>
+							<Path>SFX\UI_bubble_appear_01_C857A463.wem</Path>
+						</File>
+						<File Id="567613692" Language="SFX">
+							<ShortName>UI_bubble_appear_02.wav</ShortName>
+							<Path>SFX\UI_bubble_appear_02_0A004884.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="4122393694" Name="cave" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\cave"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="3207120222" Name="bubbleDisappear" ObjectPath="\Events\Default Work Unit\all\UI\bubbleDisappear" DurationType="OneShot" DurationMin="0.191756" DurationMax="0.209527">
+					<IncludedMemoryFiles>
+						<File Id="124233412" Language="SFX">
+							<ShortName>UI_bubble_appear_01.wav</ShortName>
+							<Path>SFX\UI_bubble_appear_01_8CE4A3BC.wem</Path>
+						</File>
+						<File Id="587552624" Language="SFX">
+							<ShortName>UI_bubble_appear_03.wav</ShortName>
+							<Path>SFX\UI_bubble_appear_03_07D64DF3.wem</Path>
+						</File>
+						<File Id="850571960" Language="SFX">
+							<ShortName>UI_bubble_appear_02.wav</ShortName>
+							<Path>SFX\UI_bubble_appear_02_31222D1F.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="4122393694" Name="cave" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\cave"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="1040398031" Name="sliceImpactVine" ObjectPath="\Events\Default Work Unit\all\UI\sliceImpactVine" DurationType="OneShot" DurationMin="0.82415" DurationMax="1.369743">
+					<IncludedMemoryFiles>
+						<File Id="255651041" Language="SFX">
+							<ShortName>sliceImpactVine_03.wav</ShortName>
+							<Path>SFX\sliceImpactVine_03_10C4C929.wem</Path>
+						</File>
+						<File Id="520572160" Language="SFX">
+							<ShortName>sliceImpactVine_05.wav</ShortName>
+							<Path>SFX\sliceImpactVine_05_10C4C929.wem</Path>
+						</File>
+						<File Id="711480355" Language="SFX">
+							<ShortName>sliceImpactVine_02.wav</ShortName>
+							<Path>SFX\sliceImpactVine_02_10C4C929.wem</Path>
+						</File>
+						<File Id="907475737" Language="SFX">
+							<ShortName>sliceImpactVine_04.wav</ShortName>
+							<Path>SFX\sliceImpactVine_04_10C4C929.wem</Path>
+						</File>
+						<File Id="1067372265" Language="SFX">
+							<ShortName>sliceImpactVine_01.wav</ShortName>
+							<Path>SFX\sliceImpactVine_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="4122393694" Name="cave" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\cave"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="764784016" Name="sliceReleased" ObjectPath="\Events\Default Work Unit\all\UI\sliceReleased" DurationType="OneShot" DurationMin="1.154813" DurationMax="1.300768">
+					<IncludedMemoryFiles>
+						<File Id="26958975" Language="SFX">
+							<ShortName>sliceReleased_04.wav</ShortName>
+							<Path>SFX\sliceReleased_04_10C4C929.wem</Path>
+						</File>
+						<File Id="134644379" Language="SFX">
+							<ShortName>sliceReleased_01.wav</ShortName>
+							<Path>SFX\sliceReleased_01_10C4C929.wem</Path>
+						</File>
+						<File Id="569222847" Language="SFX">
+							<ShortName>sliceReleased_03.wav</ShortName>
+							<Path>SFX\sliceReleased_03_10C4C929.wem</Path>
+						</File>
+						<File Id="1072226370" Language="SFX">
+							<ShortName>sliceReleased_02.wav</ShortName>
+							<Path>SFX\sliceReleased_02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="946954817" Name="mountainTop" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\mountainTop"/>
+						<AuxBus Id="4122393694" Name="cave" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\cave"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="1252261978" Name="soundTest" ObjectPath="\Events\Default Work Unit\all\soundTest" DurationType="OneShot" DurationMin="2.2211" DurationMax="5.491147">
 					<IncludedMemoryFiles>
 						<File Id="787699486" Language="SFX">
 							<ShortName>Party favor or noise maker blow whistle roll up_BLASTWAVEFX_02416.wav</ShortName>
@@ -29,7 +216,142 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="148502942" Name="treeSprout" ObjectPath="\Events\Default Work Unit\all\UI\treeSprout" DurationType="OneShot" DurationMin="4.566667" DurationMax="4.566667">
+					<IncludedMemoryFiles>
+						<File Id="1028619047" Language="SFX">
+							<ShortName>treeSprout_01-01.wav</ShortName>
+							<Path>SFX\treeSprout_01-01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="4122393694" Name="cave" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\cave"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="3952134086" Name="vineAdd" ObjectPath="\Events\Default Work Unit\all\vine\vineAdd" DurationType="OneShot" DurationMin="2.7" DurationMax="3.">
+					<IncludedMemoryFiles>
+						<File Id="257363246" Language="SFX">
+							<ShortName>vineAdd_01_v03.wav</ShortName>
+							<Path>SFX\vineAdd_01_v03_10C4C929.wem</Path>
+						</File>
+						<File Id="392613467" Language="SFX">
+							<ShortName>vineAdd_tonal_01.wav</ShortName>
+							<Path>SFX\vineAdd_tonal_01_10C4C929.wem</Path>
+						</File>
+						<File Id="429188566" Language="SFX">
+							<ShortName>vineAdd_04_v03.wav</ShortName>
+							<Path>SFX\vineAdd_04_v03_10C4C929.wem</Path>
+						</File>
+						<File Id="448212882" Language="SFX">
+							<ShortName>vineAdd_03_v03.wav</ShortName>
+							<Path>SFX\vineAdd_03_v03_10C4C929.wem</Path>
+						</File>
+						<File Id="488433550" Language="SFX">
+							<ShortName>vineAdd_tonal_02.wav</ShortName>
+							<Path>SFX\vineAdd_tonal_02_10C4C929.wem</Path>
+						</File>
+						<File Id="504603947" Language="SFX">
+							<ShortName>vineAdd_06_v03.wav</ShortName>
+							<Path>SFX\vineAdd_06_v03_10C4C929.wem</Path>
+						</File>
+						<File Id="601649170" Language="SFX">
+							<ShortName>vineAdd_tonal_03.wav</ShortName>
+							<Path>SFX\vineAdd_tonal_03_10C4C929.wem</Path>
+						</File>
+						<File Id="650228977" Language="SFX">
+							<ShortName>vineAdd_tonal_04.wav</ShortName>
+							<Path>SFX\vineAdd_tonal_04_10C4C929.wem</Path>
+						</File>
+						<File Id="657447591" Language="SFX">
+							<ShortName>vineAdd_02_v03.wav</ShortName>
+							<Path>SFX\vineAdd_02_v03_10C4C929.wem</Path>
+						</File>
+						<File Id="703302655" Language="SFX">
+							<ShortName>vineAdd_tonal_09.wav</ShortName>
+							<Path>SFX\vineAdd_tonal_09_10C4C929.wem</Path>
+						</File>
+						<File Id="735638873" Language="SFX">
+							<ShortName>vineAdd_tonal_07.wav</ShortName>
+							<Path>SFX\vineAdd_tonal_07_10C4C929.wem</Path>
+						</File>
+						<File Id="774173984" Language="SFX">
+							<ShortName>vineAdd_tonal_08.wav</ShortName>
+							<Path>SFX\vineAdd_tonal_08_10C4C929.wem</Path>
+						</File>
+						<File Id="813732065" Language="SFX">
+							<ShortName>vineAdd_05_v03.wav</ShortName>
+							<Path>SFX\vineAdd_05_v03_10C4C929.wem</Path>
+						</File>
+						<File Id="830908667" Language="SFX">
+							<ShortName>vineAdd_tonal_06.wav</ShortName>
+							<Path>SFX\vineAdd_tonal_06_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="4122393694" Name="cave" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\cave"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2142228959" Name="vineImpact" ObjectPath="\Events\Default Work Unit\all\vine\vineImpact" DurationType="OneShot" DurationMin="0.532919" DurationMax="0.809126">
+					<IncludedMemoryFiles>
+						<File Id="257363246" Language="SFX">
+							<ShortName>vineAdd_01_v03.wav</ShortName>
+							<Path>SFX\vineAdd_01_v03_10C4C929.wem</Path>
+						</File>
+						<File Id="429188566" Language="SFX">
+							<ShortName>vineAdd_04_v03.wav</ShortName>
+							<Path>SFX\vineAdd_04_v03_10C4C929.wem</Path>
+						</File>
+						<File Id="448212882" Language="SFX">
+							<ShortName>vineAdd_03_v03.wav</ShortName>
+							<Path>SFX\vineAdd_03_v03_10C4C929.wem</Path>
+						</File>
+						<File Id="504603947" Language="SFX">
+							<ShortName>vineAdd_06_v03.wav</ShortName>
+							<Path>SFX\vineAdd_06_v03_10C4C929.wem</Path>
+						</File>
+						<File Id="657447591" Language="SFX">
+							<ShortName>vineAdd_02_v03.wav</ShortName>
+							<Path>SFX\vineAdd_02_v03_10C4C929.wem</Path>
+						</File>
+						<File Id="813732065" Language="SFX">
+							<ShortName>vineAdd_05_v03.wav</ShortName>
+							<Path>SFX\vineAdd_05_v03_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="4122393694" Name="cave" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\cave"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="3485768906" Name="vineMovement" ObjectPath="\Events\Default Work Unit\all\vine\vineMovement" MaxAttenuation="75." DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="333682190" Language="SFX">
+							<ShortName>UI_aimNewVine_04.wav</ShortName>
+							<Path>SFX\UI_aimNewVine_04_22600BCB.wem</Path>
+						</File>
+						<File Id="518305785" Language="SFX">
+							<ShortName>UI_aimNewVine_05.wav</ShortName>
+							<Path>SFX\UI_aimNewVine_05_55B58CDB.wem</Path>
+						</File>
+						<File Id="729757764" Language="SFX">
+							<ShortName>UI_aimNewVine_03.wav</ShortName>
+							<Path>SFX\UI_aimNewVine_03_A5187442.wem</Path>
+						</File>
+						<File Id="900953647" Language="SFX">
+							<ShortName>UI_aimNewVine_01.wav</ShortName>
+							<Path>SFX\UI_aimNewVine_01_4C5A0110.wem</Path>
+						</File>
+						<File Id="937043636" Language="SFX">
+							<ShortName>UI_aimNewVine_02.wav</ShortName>
+							<Path>SFX\UI_aimNewVine_02_78F0501F.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="4122393694" Name="cave" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\cave"/>
+					</AuxBusSends>
+				</Event>
 			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="1631177638" Name="vineSpeed" ObjectPath="\Game Parameters\Default Work Unit\vineSpeed"/>
+			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

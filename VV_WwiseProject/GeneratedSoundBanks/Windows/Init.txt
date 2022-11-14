@@ -1,6 +1,14 @@
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	946954817	mountainTop			\Default Work Unit\Master Audio Bus\mountainTop	
+	4122393694	cave			\Default Work Unit\Master Audio Bus\cave	
+
+Effect plug-ins	ID	Name	Type				Notes
+	3395979371	Straight_Delay	Wwise Stereo Delay			
+	3442768367	Hall_Large_Dark	Wwise RoomVerb			
+
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			
 	3859886410	System	System			

@@ -49,6 +49,7 @@ public class SlicerObject : MonoBehaviour
         if(collision.tag == "Vine")
         {
             collision.GetComponent<Vine>().Slice();
+            AkSoundEngine.PostEvent("sliceImpactVine", gameObject);
             
         }
     }

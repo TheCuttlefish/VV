@@ -3,17 +3,216 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{39FF33DA-9C0A-42B4-9753-635BD368F4A9}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="soundTest" ID="{B5103D56-EF00-47E6-A766-495C5F29E0B0}">
+				<Folder Name="all" ID="{2A1E7F59-356C-496C-B8A0-1E9E59388E9F}" ShortID="466578452">
 					<ChildrenList>
-						<Action Name="" ID="{C26D680E-90AD-4B47-8795-A6A11CEFE94C}" ShortID="696200908">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="soundTest" ID="{9F72774B-721A-4ECE-81AF-FA3FCF0FC7B9}" WorkUnitID="{B030171F-BE5D-475E-A614-2B4831CAB52D}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Folder Name="amb" ID="{4F50CB12-121C-449B-9C54-FBD114CA3E62}" ShortID="872405639">
+							<ChildrenList>
+								<Event Name="ambCave" ID="{970AD4AB-3AB9-4663-9125-90D60DB85CAA}">
+									<ChildrenList>
+										<Action Name="" ID="{7BC0F43B-0BDE-49D6-92C0-95AEFFA7579E}" ShortID="289906411">
+											<PropertyList>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="amb_cave" ID="{2D7FD1B8-9465-4931-B15E-7591C6F3756C}" WorkUnitID="{B030171F-BE5D-475E-A614-2B4831CAB52D}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{651B3103-A5F1-48DB-BD1E-946E42D3AF9A}" ShortID="168470335">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="amb_mountainRain_thunder" ID="{7658A598-6EBE-45BA-9C7E-18232616E269}" WorkUnitID="{B030171F-BE5D-475E-A614-2B4831CAB52D}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="ambMountainRainThunder" ID="{2E7E8006-DE9B-46DB-9B69-1955E7158CCF}">
+									<ChildrenList>
+										<Action Name="" ID="{F07786A0-AA2F-465E-97F4-783C66F22F77}" ShortID="885476431">
+											<PropertyList>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="amb_mountainRain_thunder" ID="{7658A598-6EBE-45BA-9C7E-18232616E269}" WorkUnitID="{B030171F-BE5D-475E-A614-2B4831CAB52D}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{29311CBC-FC78-40B4-9F54-48B0F2044F5D}" ShortID="503588292">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="openingTheme" ID="{93EE9C66-B7E4-442E-826B-AF0BE5BD40E8}" WorkUnitID="{AD7373F5-3A08-4FB8-B024-55FEE36C709D}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{CF7499DA-44AA-44AB-B58C-B7139C054184}" ShortID="342760752">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="amb_cave" ID="{2D7FD1B8-9465-4931-B15E-7591C6F3756C}" WorkUnitID="{B030171F-BE5D-475E-A614-2B4831CAB52D}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="UI" ID="{8BD75730-D857-4950-BC9C-36ACE0BA8DE0}" ShortID="653605309">
+							<ChildrenList>
+								<Event Name="bubbleAppear" ID="{BA996F93-39DC-4C10-80D8-E2FE716518BC}">
+									<ChildrenList>
+										<Action Name="" ID="{D70E33FE-1A77-4323-ADCF-6A352F3EA0F0}" ShortID="466316762">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="bubbleAppear" ID="{A8E23022-5F6F-4F4A-824A-85E80D671496}" WorkUnitID="{B030171F-BE5D-475E-A614-2B4831CAB52D}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="bubbleDisappear" ID="{529DAA4B-D144-4157-8A31-1A3D32264F60}">
+									<ChildrenList>
+										<Action Name="" ID="{90BD104D-B50D-4B1A-9BA4-3C8C91933AAA}" ShortID="618229475">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="bubbleDisappear" ID="{4F767533-41E5-4602-800F-A539FE77CC2E}" WorkUnitID="{B030171F-BE5D-475E-A614-2B4831CAB52D}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{2B6C55D4-2E2D-478B-B7D4-03E9BF4A9248}" ShortID="224657442">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="aimNewVine" ID="{9486155A-EC45-4372-9A8A-592C6A5B33CE}" WorkUnitID="{B030171F-BE5D-475E-A614-2B4831CAB52D}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="aimNewVine" ID="{B2A0698A-0EB4-4F95-80C7-E899F2AE11CB}">
+									<ChildrenList>
+										<Action Name="" ID="{046F481D-CE7F-4B2C-82ED-DF30AAC90800}" ShortID="188894800">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="aimNewVine" ID="{9486155A-EC45-4372-9A8A-592C6A5B33CE}" WorkUnitID="{B030171F-BE5D-475E-A614-2B4831CAB52D}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="treeSprout" ID="{9730B42D-2C12-4EC1-971D-D34DDB63D86F}">
+									<ChildrenList>
+										<Action Name="" ID="{53715538-76A4-4878-B90A-10A71D38E3C4}" ShortID="592820926">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="treeSprout" ID="{2FA25918-E8BB-4D28-B1D3-FD1F9C26BF7A}" WorkUnitID="{B030171F-BE5D-475E-A614-2B4831CAB52D}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="sliceImpactVine" ID="{E4280EF8-166E-4A8B-A22B-994CE5F8D799}">
+									<ChildrenList>
+										<Action Name="" ID="{213BBCE0-E1AE-4AD2-85B0-8A7F0851A7BE}" ShortID="672070901">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sliceImpactVine" ID="{8399E4D2-7E4D-48BD-B25D-B73682607C42}" WorkUnitID="{B030171F-BE5D-475E-A614-2B4831CAB52D}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="sliceReleased" ID="{107A12A5-A0B6-434D-96EB-CDBDF6FD3DA6}">
+									<ChildrenList>
+										<Action Name="" ID="{136A4FD3-2E77-4012-ACB8-25108C06DAAB}" ShortID="173110744">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sliceReleased" ID="{9A6923F1-918F-4333-849E-440643E2A325}" WorkUnitID="{B030171F-BE5D-475E-A614-2B4831CAB52D}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="vine" ID="{CE7137CF-71FC-41B5-8F41-4387B724CEE4}" ShortID="196951360">
+							<ChildrenList>
+								<Event Name="vineAdd" ID="{6A8AC4E4-F078-4D8C-8FF2-71FA6AFB4895}">
+									<ChildrenList>
+										<Action Name="" ID="{8115E60F-B1E6-45C0-9839-F245B112994B}" ShortID="201506218">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="vineAdd_blend" ID="{208C1660-667B-444A-B93D-C53F4097503A}" WorkUnitID="{0200667E-FDAC-43E9-A402-650BADCD7888}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{EA22E46F-496D-463C-873C-410ACF6D2BD5}" ShortID="138688238">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="aimNewVine" ID="{9486155A-EC45-4372-9A8A-592C6A5B33CE}" WorkUnitID="{B030171F-BE5D-475E-A614-2B4831CAB52D}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="vineMovement" ID="{C0A7BEE5-BC2F-434C-91E9-76FF3D5991F5}">
+									<ChildrenList>
+										<Action Name="" ID="{47FDE69B-33C4-4C1B-B69D-F9C2C7125F8D}" ShortID="74057907">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="vineMovement" ID="{61384127-EACF-4D7F-B401-4F0FF08B2643}" WorkUnitID="{0200667E-FDAC-43E9-A402-650BADCD7888}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="vineImpact" ID="{19840307-3395-4044-AA3E-A2C7271A19F2}">
+									<ChildrenList>
+										<Action Name="" ID="{193D0BB3-378B-4BCE-B12C-A99273D41739}" ShortID="318156262">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="vineImpact" ID="{B6F43FB5-057C-433F-966E-97B774EAD919}" WorkUnitID="{0200667E-FDAC-43E9-A402-650BADCD7888}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Event Name="soundTest" ID="{B5103D56-EF00-47E6-A766-495C5F29E0B0}">
+							<ChildrenList>
+								<Action Name="" ID="{C26D680E-90AD-4B47-8795-A6A11CEFE94C}" ShortID="696200908">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="soundTest" ID="{9F72774B-721A-4ECE-81AF-FA3FCF0FC7B9}" WorkUnitID="{B030171F-BE5D-475E-A614-2B4831CAB52D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

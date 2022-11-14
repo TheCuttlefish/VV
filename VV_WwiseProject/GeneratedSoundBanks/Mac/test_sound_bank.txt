@@ -1,6 +1,88 @@
 Event	ID	Name			Wwise Object Path	Notes
-	1252261978	soundTest			\Default Work Unit\soundTest	
+	148502942	treeSprout			\Default Work Unit\all\UI\treeSprout	
+	764784016	sliceReleased			\Default Work Unit\all\UI\sliceReleased	
+	1040398031	sliceImpactVine			\Default Work Unit\all\UI\sliceImpactVine	
+	1252261978	soundTest			\Default Work Unit\all\soundTest	
+	1325171166	ambMountainRainThunder			\Default Work Unit\all\amb\ambMountainRainThunder	
+	2142228959	vineImpact			\Default Work Unit\all\vine\vineImpact	
+	2264783118	aimNewVine			\Default Work Unit\all\UI\aimNewVine	
+	2435006360	ambCave			\Default Work Unit\all\amb\ambCave	
+	3076357196	bubbleAppear			\Default Work Unit\all\UI\bubbleAppear	
+	3207120222	bubbleDisappear			\Default Work Unit\all\UI\bubbleDisappear	
+	3485768906	vineMovement			\Default Work Unit\all\vine\vineMovement	
+	3952134086	vineAdd			\Default Work Unit\all\vine\vineAdd	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1631177638	vineSpeed			\Default Work Unit\vineSpeed	
+
+Modulator Time	ID	Name			Wwise Object Path	Notes
+	419201196	Modulator Time (Custom)				
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	90044532	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\amb\mountainRain\amb_mountainRain_thunder\thunder_oneshots\New Sound SFX_06\Wwise Silence	
+	277749603	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\amb\mountainRain\amb_mountainRain_thunder\thunder_oneshots\New Sound SFX\Wwise Silence	
+	357253747	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\amb\mountainRain\amb_mountainRain_thunder\thunder_oneshots\New Sound SFX_02\Wwise Silence	
+	411593560	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\UI\bubble\aimNewVine\bubbleIncrease\bubbleIncrease\New Sound SFX\Wwise Silence	
+	633019813	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\amb\mountainRain\amb_mountainRain_thunder\thunder_oneshots\New Sound SFX_03\Wwise Silence	
+	690396468	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\amb\mountainRain\amb_mountainRain_thunder\thunder_oneshots\New Sound SFX_04\Wwise Silence	
+	795005057	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\amb\mountainRain\amb_mountainRain_thunder\thunder_oneshots\New Sound SFX_07\Wwise Silence	
+	860869068	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\amb\mountainRain\amb_mountainRain_thunder\thunder_oneshots\New Sound SFX_05\Wwise Silence	
+	900018844	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\amb\mountainRain\amb_mountainRain_thunder\thunder_oneshots\New Sound SFX_01\Wwise Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	11445115	UI_bubble_appear_03	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\UI_bubble_appear_03_7A8F9308.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\bubble\bubbleAppear\UI_bubble_appear_03		25302
+	26958975	sliceReleased_04	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\sliceReleased_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\slicer\sliceReleased\sliceReleased_04		276736
+	112681207	UI_vineAddBubbleLoop_03-01	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\UI_vineAddBubbleLoop_03-02_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\bubble\aimNewVine\bubbleIncrease\UI_vineBubbleLoop\UI_vineAddBubbleLoop_03-01		2995572
+	124233412	UI_bubble_appear_01	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\UI_bubble_appear_01_8CE4A3BC.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\bubble\bubbleDisappear\UI_bubble_appear_01		13018
+	134644379	sliceReleased_01	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\sliceReleased_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\slicer\sliceReleased\sliceReleased_01		294064
+	135402697	UI_bubble_appear_01	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\UI_bubble_appear_01_C857A463.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\bubble\bubbleAppear\UI_bubble_appear_01		25846
+	154756458	opening_draft_01	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\opening_draft_01_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\openingTheme\opening_draft_01		33798304
+	179861526	UI_vineAddBubbleLoop_02-01	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\UI_vineAddBubbleLoop_02-02_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\bubble\aimNewVine\bubbleIncrease\UI_vineBubbleLoop\UI_vineAddBubbleLoop_02-01		2995572
+	255651041	sliceImpactVine_03	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\sliceImpactVine_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\slicer\sliceImpactVine\sliceImpactVine_03		199984
+	257363246	vineAdd_01_v03	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\vineAdd_01_v03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\vine\vineAdd_blend\vineAdd\vineAdd_01_v03		60146
+	333682190	UI_aimNewVine_04	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\UI_aimNewVine_04_22600BCB.wem		\Actor-Mixer Hierarchy\Default Work Unit\vine\vineMovement\vineMomevent\UI_aimNewVine_04		86298
+	392613467	vineAdd_tonal_01	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\vineAdd_tonal_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\vine\vineAdd_blend\vineAdd_tonal\vineAdd_tonal_01		529264
+	429188566	vineAdd_04_v03	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\vineAdd_04_v03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\vine\vineAdd_blend\vineAdd\vineAdd_04_v03		75330
+	445826259	UI_bubble_appear_03	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\UI_bubble_appear_03_78CB3C4C.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\bubble\aimNewVine\bubbleIncrease\bubbleIncrease\bubbleAppear\UI_bubble_appear_03		7370
+	448212882	vineAdd_03_v03	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\vineAdd_03_v03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\vine\vineAdd_blend\vineAdd\vineAdd_03_v03		87368
+	488433550	vineAdd_tonal_02	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\vineAdd_tonal_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\vine\vineAdd_blend\vineAdd_tonal\vineAdd_tonal_02		505744
+	504603947	vineAdd_06_v03	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\vineAdd_06_v03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\vine\vineAdd_blend\vineAdd\vineAdd_06_v03		73858
+	518305785	UI_aimNewVine_05	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\UI_aimNewVine_05_55B58CDB.wem		\Actor-Mixer Hierarchy\Default Work Unit\vine\vineMovement\vineMomevent\UI_aimNewVine_05		191696
+	520572160	sliceImpactVine_05	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\sliceImpactVine_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\slicer\sliceImpactVine\sliceImpactVine_05		145444
+	532583028	amb_mountainRain	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\amb_mountainRain_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\mountainRain\amb_mountainRain_thunder\amb_mountainRain		15876064
+	567613692	UI_bubble_appear_02	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\UI_bubble_appear_02_0A004884.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\bubble\bubbleAppear\UI_bubble_appear_02		25380
+	569222847	sliceReleased_03	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\sliceReleased_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\slicer\sliceReleased\sliceReleased_03		311704
+	587552624	UI_bubble_appear_03	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\UI_bubble_appear_03_07D64DF3.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\bubble\bubbleDisappear\UI_bubble_appear_03		12516
+	594074893	UI_aimNewVine_03	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\UI_aimNewVine_03_A9FCD67B.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\bubble\aimNewVine\aimNewVine\UI_aimNewVine_03		231688
+	601649170	vineAdd_tonal_03	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\vineAdd_tonal_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\vine\vineAdd_blend\vineAdd_tonal\vineAdd_tonal_03		488104
+	611027789	UI_bubble_appear_01	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\UI_bubble_appear_01_7C345EA2.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\bubble\aimNewVine\bubbleIncrease\bubbleIncrease\bubbleAppear\UI_bubble_appear_01		9906
+	616014920	UI_aimNewVine_02	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\UI_aimNewVine_02_0EBC53FB.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\bubble\aimNewVine\aimNewVine\UI_aimNewVine_02		291260
+	650228977	vineAdd_tonal_04	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\vineAdd_tonal_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\vine\vineAdd_blend\vineAdd_tonal\vineAdd_tonal_04		505744
+	657447591	vineAdd_02_v03	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\vineAdd_02_v03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\vine\vineAdd_blend\vineAdd\vineAdd_02_v03		61094
+	672179146	UI_aimNewVine_05	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\UI_aimNewVine_05_3C84D389.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\bubble\aimNewVine\aimNewVine\UI_aimNewVine_05		248350
+	680210286	amb_thunder_01	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\amb_thunder_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\mountainRain\amb_mountainRain_thunder\thunder_oneshots\amb_thunder_01		2483336
+	686413517	amb_cave	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\amb_cave_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\cave\amb_cave		10482480
+	703302655	vineAdd_tonal_09	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\vineAdd_tonal_09_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\vine\vineAdd_blend\vineAdd_tonal\vineAdd_tonal_09		482224
+	711480355	sliceImpactVine_02	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\sliceImpactVine_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\slicer\sliceImpactVine\sliceImpactVine_02		199984
+	720679813	amb_thunder_04	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\amb_thunder_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\mountainRain\amb_mountainRain_thunder\thunder_oneshots\amb_thunder_04		1352464
+	723057964	UI_aimNewVine_04	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\UI_aimNewVine_04_533BC5AA.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\bubble\aimNewVine\aimNewVine\UI_aimNewVine_04		325836
+	728865526	UI_vineAddBubbleLoop-01	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\UI_vineAddBubbleLoop_01-02_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\bubble\aimNewVine\bubbleIncrease\UI_vineBubbleLoop\UI_vineAddBubbleLoop-01		2995572
+	729757764	UI_aimNewVine_03	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\UI_aimNewVine_03_A5187442.wem		\Actor-Mixer Hierarchy\Default Work Unit\vine\vineMovement\vineMomevent\UI_aimNewVine_03		162534
+	735638873	vineAdd_tonal_07	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\vineAdd_tonal_07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\vine\vineAdd_blend\vineAdd_tonal\vineAdd_tonal_07		476344
+	755228075	UI_bubble_appear_02	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\UI_bubble_appear_02_0B8537EA.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\bubble\aimNewVine\bubbleIncrease\bubbleIncrease\bubbleAppear\UI_bubble_appear_02		9874
+	774173984	vineAdd_tonal_08	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\vineAdd_tonal_08_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\vine\vineAdd_blend\vineAdd_tonal\vineAdd_tonal_08		505744
+	779791086	amb_thunder_03	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\amb_thunder_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\mountainRain\amb_mountainRain_thunder\thunder_oneshots\amb_thunder_03		1234864
 	787699486	soundTest	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\Party favor or noise maker blow whistle roll up_BLASTWAVEFX_02416_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\soundTest		480760
+	813732065	vineAdd_05_v03	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\vineAdd_05_v03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\vine\vineAdd_blend\vineAdd\vineAdd_05_v03		68814
+	830908667	vineAdd_tonal_06	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\vineAdd_tonal_06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\vine\vineAdd_blend\vineAdd_tonal\vineAdd_tonal_06		493984
+	838884173	amb_thunder_05	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\amb_thunder_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\mountainRain\amb_mountainRain_thunder\thunder_oneshots\amb_thunder_05		1482484
+	850571960	UI_bubble_appear_02	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\UI_bubble_appear_02_31222D1F.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\bubble\bubbleDisappear\UI_bubble_appear_02		13672
+	900953647	UI_aimNewVine_01	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\UI_aimNewVine_01_4C5A0110.wem		\Actor-Mixer Hierarchy\Default Work Unit\vine\vineMovement\vineMomevent\UI_aimNewVine_01		117542
+	907475737	sliceImpactVine_04	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\sliceImpactVine_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\slicer\sliceImpactVine\sliceImpactVine_04		145444
+	937043636	UI_aimNewVine_02	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\UI_aimNewVine_02_78F0501F.wem		\Actor-Mixer Hierarchy\Default Work Unit\vine\vineMovement\vineMomevent\UI_aimNewVine_02		104212
+	1028619047	treeSprout_01	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\treeSprout_01-01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\tree\treeSprout\treeSprout_01		805624
+	1039848177	amb_thunder_02	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\amb_thunder_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb\mountainRain\amb_mountainRain_thunder\thunder_oneshots\amb_thunder_02		2293264
+	1054741086	UI_aimNewVine_01	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\UI_aimNewVine_01_2E0B0025.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\bubble\aimNewVine\aimNewVine\UI_aimNewVine_01		325836
+	1067372265	sliceImpactVine_01	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\sliceImpactVine_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\slicer\sliceImpactVine\sliceImpactVine_01		145444
+	1072226370	sliceReleased_02	D:\Cuttlefish\VV\VV_WwiseProject\.cache\Mac\SFX\sliceReleased_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\slicer\sliceReleased\sliceReleased_02		311704
 
