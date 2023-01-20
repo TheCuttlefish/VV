@@ -108,6 +108,7 @@ public class Vine : MonoBehaviour
     bool sliced = false;
     public void Slice()
     {
+        if (currentSize == 7) return;
         if (!sliced)
         {
             ReadyToSlice(false);
@@ -120,6 +121,8 @@ public class Vine : MonoBehaviour
 
     public void ReadyToSlice(bool isSelected)
     {
+        if (currentSize == 7) return;
+
         if (isSelected)
         {
             vineArt.GetComponent<SpriteRenderer>().color = new Color(1, 0, 0, 0.3f);

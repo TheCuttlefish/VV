@@ -6,7 +6,7 @@ public class UISelectCircle : MonoBehaviour
 {
     float scale = 0;
     float newScale = 1;
-    float scaleSpeed = 0.2f;
+    float scaleSpeed = 0.1f;//0.2f
     bool playShowSound = false;
     void Update()
     {
