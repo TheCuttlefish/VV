@@ -24,15 +24,8 @@ public class Menu : MonoBehaviour
         clock.transform.localEulerAngles = new Vector3(0, 0, -hour * 15);
         //clock.transform.localEulerAngles = new Vector3(0, 0, -timer * 15);
 
+        clock.GetComponent<SpriteRenderer>().color = timeGradient.Evaluate( (float)hour / 12);
 
 
-
-        if (Input.GetKey(KeyCode.A))
-        {
-            clock.GetComponent<SpriteRenderer>().color = Color.red;
-        }else
-        {
-            clock.GetComponent<SpriteRenderer>().color = Color.white;
-        }
     }
 }
