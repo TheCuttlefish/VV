@@ -55,9 +55,6 @@
             "m_Id": "2ca2561bc69f426fa33c8ebf12aea61d"
         },
         {
-            "m_Id": "80021752d4544ed1865a804e2e677c80"
-        },
-        {
             "m_Id": "131117d53dab46a5896c65a7be906cf4"
         },
         {
@@ -3115,7 +3112,7 @@
     "m_ShaderOutputName": "B",
     "m_StageCapability": 3,
     "m_Value": {
-        "e00": 3.0,
+        "e00": 1.0,
         "e01": 2.0,
         "e02": 2.0,
         "e03": 2.0,
@@ -4002,43 +3999,6 @@
 
 {
     "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.SliderNode",
-    "m_ObjectId": "80021752d4544ed1865a804e2e677c80",
-    "m_Group": {
-        "m_Id": ""
-    },
-    "m_Name": "Slider",
-    "m_DrawState": {
-        "m_Expanded": true,
-        "m_Position": {
-            "serializedVersion": "2",
-            "x": -1063.0,
-            "y": -440.9999694824219,
-            "width": 232.0,
-            "height": 145.99996948242188
-        }
-    },
-    "m_Slots": [
-        {
-            "m_Id": "fb65316ecc934cccbd7d77d38e0ec3a8"
-        }
-    ],
-    "synonyms": [],
-    "m_Precision": 0,
-    "m_PreviewExpanded": true,
-    "m_PreviewMode": 0,
-    "m_CustomColors": {
-        "m_SerializableColors": []
-    },
-    "m_Value": {
-        "x": 0.057999998331069949,
-        "y": 0.0,
-        "z": 1.0
-    }
-}
-
-{
-    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "80ef6df4853d4053afd195af4ddb194d",
     "m_Id": 1,
@@ -4663,7 +4623,7 @@
     "m_ShaderOutputName": "B",
     "m_StageCapability": 3,
     "m_Value": {
-        "e00": 1.0,
+        "e00": 0.5,
         "e01": 2.0,
         "e02": 2.0,
         "e03": 2.0,
@@ -7300,21 +7260,6 @@
     "m_CustomColors": {
         "m_SerializableColors": []
     }
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
-    "m_ObjectId": "fb65316ecc934cccbd7d77d38e0ec3a8",
-    "m_Id": 0,
-    "m_DisplayName": "Out",
-    "m_SlotType": 1,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "Out",
-    "m_StageCapability": 3,
-    "m_Value": 0.0,
-    "m_DefaultValue": 0.0,
-    "m_Labels": []
 }
 
 {

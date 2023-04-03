@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: flower
-  m_Shader: {fileID: -6465566751694194690, guid: 7ef3df3082fcaca48851616dbccd6569,
+  m_Name: seed_light
+  m_Shader: {fileID: -6465566751694194690, guid: 8ab7dbce9286da149b9faed910e58d4d,
     type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -61,8 +61,16 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_2f125daa2eef4332916ae8d78a197b42_Texture_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_334be57a98d04d779893a0506a044998_Out_0:
+        m_Texture: {fileID: 2800000, guid: bb6263f78931ecf49a039c0b481e48c2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -106,19 +114,13 @@ Material:
     - _Surface: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
-    - _noise_intensity: 4.68
-    - _noise_size: 1
-    - _noise_spread: 0.736
-    - _speed: 2.98
-    - _wind: 0.125
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0.8396226, g: 0.8028311, b: 0, a: 1}
-    - _Color_1: {r: 0.7372549, g: 0, b: 0.23566367, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
   m_BuildTextureStacks: []
---- !u!114 &158524165876775166
+--- !u!114 &3736739090090825122
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}

@@ -106,9 +106,9 @@ Material:
     - _Surface: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
-    - _noise_intensity: 1
-    - _noise_size: 4.8
-    - _noise_spread: 1
+    - _noise_intensity: 3.06
+    - _noise_size: 8.9
+    - _noise_spread: 0.963
     - _speed: 0.89
     - _wind: 0.088
     m_Colors:
