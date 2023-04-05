@@ -106,15 +106,15 @@ Material:
     - _Surface: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
-    - _noise_intensity: 3.06
-    - _noise_size: 8.9
-    - _noise_spread: 0.963
-    - _speed: 0.89
+    - _noise_intensity: 4.3
+    - _noise_size: 2
+    - _noise_spread: 0.45
+    - _speed: 1.4
     - _wind: 0.088
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 0, g: 0.058904722, b: 0.0754717, a: 1}
-    - _Color_1: {r: 0.057493784, g: 0.7169812, b: 0.124973446, a: 0}
+    - _Color_1: {r: 0.035288375, g: 0.5754717, b: 0.08994983, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
   m_BuildTextureStacks: []

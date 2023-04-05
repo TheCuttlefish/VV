@@ -7,10 +7,13 @@ public class MenuPlant : MonoBehaviour
 
     Vector3 scale;
     public AnimationCurve curve;
-    float timer;
+    float timer = 0;
+    [Range(0f, 3f)]
+    public float delay = 0.5f; 
     // Start is called before the first frame update
     void Awake()
     {
+        timer = -delay;
         scale = transform.localScale;
         transform.localScale = Vector3.zero;
     }
