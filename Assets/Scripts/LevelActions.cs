@@ -4,28 +4,50 @@ using UnityEngine;
 
 public class LevelActions : MonoBehaviour
 {
+    public int level = 1;
+    int currentLevel = 0;
     public List<GameObject> plants = new List<GameObject> ();
+    public GameObject copter;
 
-    public void ShowLevel()
-    {
-        foreach (var p in plants)
+
+
+   public void InitLevel(int _currentLevel)
+   {
+       
+        currentLevel = _currentLevel;
+
+        foreach (var i in plants) i.SetActive(false);
+        if (currentLevel == 0 && level == 1 )//if current level ==0 and this is the first level
         {
-            p.SetActive(true);
+            copter.SetActive(true);
+        }
+        else
+        {
+
+            if ((currentLevel + 1) > level)
+            {
+                foreach (var i in plants) {
+                    if(!i.GetComponent<LevelItem>().introEffect)
+                        i.SetActive(true);
+                }
+            
+            }
+            else
+            {
+                foreach (var p in plants) p.SetActive(false);
+            }
+
         }
     }
 
-    // Start is called before the first frame update
-    void Awake()
+   
+
+    public void AnimateLevelIntro()
     {
-        foreach( var p in plants)
-        {
-            p.SetActive(false);
-        }
+
+        foreach (var i in plants) i.GetComponent<LevelItem>().Animate();
+        foreach (var i in plants) i.SetActive(true);
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
